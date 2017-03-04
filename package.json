@@ -7,8 +7,8 @@
     "react-doc-generator": "dist/index.js"
   },
   "scripts": {
-    "transpile": "babel src -D -d dist --ignore '__test__, __mocks__'",
-    "postinstall": "babel src -D -d dist --ignore '__test__, __mocks__'",
+    "transpile": "babel ./src -D -d ./dist --ignore '__test__, __mocks__'",
+    "postinstall": "babel ./src -D -d ./dist --ignore '__test__, __mocks__'",
     "test": "jest"
   },
   "repository": {
