@@ -80,6 +80,10 @@ if (Command.args.length !== 1) {
                         component.title = component.displayName;
                     }
 
+                    if (component.description) {
+                        component.description = `${component.description}\n\n`;
+                    }
+
                     return component;
                 });
                 templateData.files.push({ filename, components });
