@@ -7,8 +7,8 @@
     "react-doc-generator": "dist/index.js"
   },
   "scripts": {
-    "transpile": "babel src -D -d dist --ignore '__tests__'",
-    "watch": "babel src -D -d dist --ignore '__tests__' --watch",
+    "transpile": "babel src -D -d dist --ignore '__tests__, __mocks__'",
+    "watch": "babel src -D -d dist --ignore '__tests__,__mocks__' --watch",
     "pretest": "npm run transpile",
     "test": "jest"
   },
