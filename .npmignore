@@ -1,0 +1,6 @@
+.DS_Store
+.idea
+.babelrc
+.jshintrc
+.eslintrc
+npm-debug.log
