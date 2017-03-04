@@ -81,7 +81,7 @@ if (Command.args.length !== 1) {
                     }
 
                     if (component.description) {
-                        component.description = `${component.description}\n\n`;
+                        component.description = `${component.description}   \n\n`;
                     }
 
                     return component;
