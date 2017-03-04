@@ -13,10 +13,10 @@
 
 
 {{#if props}}
-Property | Type | Required | Description
-:--- | :--- | :--- | :---
+Property | Type | Required | Default value | Description
+:--- | :--- | :--- | :--- | :---
 {{#each props}}
-{{@key}}|{{type.name}}|{{#if required}}yes{{else}}no{{/if}}|{{description}}
+{{@key}}|{{type.name}}|{{#if required}}yes{{else}}no{{/if}}|{{defaultValue.value}}|{{description}}
 {{/each}}
 {{/if}}
 {{/each}}

@@ -21,6 +21,13 @@ export class Component1 extends React.Component {
       ]),
   }
 
+  static defaultProps = {
+      /**
+       * Foo number of nothing.
+       */
+      foo: 10000099999
+  }
+
   render () {
       return (<div>Hello</div>);
   }

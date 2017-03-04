@@ -15,10 +15,10 @@ Example:
 
 
 
-Property | Type | Required | Description
-:--- | :--- | :--- | :---
-showMore|bool|yes|
-title|string|no|
+Property | Type | Required | Default value | Description
+:--- | :--- | :--- | :--- | :---
+showMore|bool|yes|false|
+title|string|no||
 -----
 **app/components/button/button.jsx**
 
@@ -55,10 +55,10 @@ const TestButtons = () => (
 );
 ```
 
-Property | Type | Required | Description
-:--- | :--- | :--- | :---
-label|string|yes|Button label
-width|number|no|Button width
+Property | Type | Required | Default value | Description
+:--- | :--- | :--- | :--- | :---
+label|string|yes|Submit|Button label
+width|number|no|500|Button width
 
 
 -----
@@ -99,9 +99,9 @@ class DropdownTest extends React.Component {
 }
 ```
 
-Property | Type | Required | Description
-:--- | :--- | :--- | :---
-source|array|yes|Elements
+Property | Type | Required | Default value | Description
+:--- | :--- | :--- | :--- | :---
+source|array|yes|[1, 2, 3]|Elements
 
 
 -----

@@ -28,7 +28,8 @@ const list = (val) => {
     return val.split(',').filter(value => value.length > 0);
 }
 
-console.log(Colors.white(`\n\nREACT DOC GENERATOR v${pkg.version} by Marcin Borkowski <marborkowski@gmail.com>`));
+console.log(Colors.white(`\n\nREACT DOC GENERATOR v${pkg.version}`));
+console.log(Colors.white(`by Marcin Borkowski <marborkowski@gmail.com>`));
 
 Command
   .version(pkg.version)
