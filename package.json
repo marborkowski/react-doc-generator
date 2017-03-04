@@ -2,13 +2,14 @@
   "name": "react-doc-generator",
   "version": "1.0.7",
   "description": "",
-  "main": "src/index.js",
+  "main": "dist/index.js",
   "bin": {
     "react-doc-generator": "dist/index.js"
   },
   "scripts": {
-    "transpile": "babel ./src -D -d ./dist --ignore '__test__, __mocks__'",
-    "postinstall": "babel ./src -D -d ./dist --ignore '__test__, __mocks__'",
+    "transpile": "babel src -D -d dist --ignore '__tests__'",
+    "watch": "babel src -D -d dist --ignore '__tests__' --watch",
+    "pretest": "npm run transpile",
     "test": "jest"
   },
   "repository": {
