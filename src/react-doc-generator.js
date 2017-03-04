@@ -1,17 +1,15 @@
 #!/usr/bin/env node
-// https://github.com/team-767/simple-react-docgen/blob/master/src/simple-react-docgen.js
-import { parse, resolver } from 'react-docgen'
+
+import { parse, resolver } from 'react-docgen';
 import fs from 'fs';
 import path from 'path';
-import Command from 'commander';
+import Command from './lib/command.js';
 import { readFiles } from 'node-dir';
 import Handlebars from 'handlebars';
 import Colors from 'colors';
 import Table from 'cli-table';
 
 const pkg = require('../package.json');
-
-
 const table = new Table({
     head: [
         Colors.cyan('Path'),
@@ -23,23 +21,10 @@ Handlebars.registerHelper('inc', (value, options) => {
     return parseInt(value) + 1;
 });
 
-const list = (val) => {
-    val = val.replace(/[, ]+/g, ",").trim();
-    return val.split(',').filter(value => value.length > 0);
-}
-
 console.log(Colors.white(`\n\nREACT DOC GENERATOR v${pkg.version}`));
 console.log(Colors.white(`by Marcin Borkowski <marborkowski@gmail.com>`));
 
-Command
-  .version(pkg.version)
-  .usage(`<dir> [options]`)
-  .option('-x, --extensions <items>', 'Include only these file extensions.', list, ['js', 'jsx'])
-  .option('-i, --ignore <items>', 'Folders to ignore.', list, ['node_modules', '__tests__', '__mocks__'])
-  .option('-e, --exclude-patterns <items>', 'Filename patterns to exclude.', list, [])
-  .option('-t, --title [title]>', 'Document title', 'Components')
-  .option('-o, --output <file>', 'Markdown file to write.', 'README.MD')
-  .parse(process.argv);
+
 
 const output = fs.createWriteStream(Command.output);
 const templateData = {
