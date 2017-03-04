@@ -8,7 +8,6 @@
   },
   "scripts": {
     "transpile": "babel src -D -d dist --ignore '__test__, __mocks__'",
-    "start": "npm run transpile && node ./dist/index.js",
     "test": "jest"
   },
   "repository": {
