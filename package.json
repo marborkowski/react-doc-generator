@@ -4,7 +4,7 @@
   "description": "",
   "main": "dist/index.js",
   "bin": {
-    "react-doc-generator": "dist/index.js"
+    "react-doc-generator": "dist/react-doc-generator.js"
   },
   "scripts": {
     "transpile": "babel src -D -d dist --ignore '__tests__, __mocks__'",
