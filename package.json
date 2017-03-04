@@ -10,8 +10,7 @@
     "transpile": "babel src -D -d dist --ignore '__test__, __mocks__'",
     "start": "npm run transpile && node ./dist/index.js",
     "postinstall": "npm run transpile",
-    "test": "jest",
-    "version": "git add ./package.json && git commit -m \"Bump version $npm_package_version\" && git tag -a $npm_package_version -m \"Version $npm_package_version\""
+    "test": "jest"
   },
   "repository": {
     "type": "git",
