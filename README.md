@@ -29,11 +29,55 @@ Options:
   -o, --output <file>             Markdown file to write. Default: 'README.MD'
 ```
 
+## API
+
+```js
+/**
+ * General component description.
+ * You can even use the native Markdown here.
+ * E.g.:
+ * ```html
+ * <MyComponent foo={541} />
+ * ```
+ */
+export class MyComponent extends React.Component {
+  static displayName = 'Official Component Name'
+  static propTypes = {
+      /**
+       * Description of prop "foo".
+       */
+      foo: React.PropTypes.number,
+      /**
+       * Description of prop "bar" (a custom validation function).
+       */
+      bar: function(props, propName, componentName) {
+        // ...
+      },
+      baz: React.PropTypes.oneOfType([
+        React.PropTypes.number,
+        React.PropTypes.string
+      ]),
+  }
+
+  static defaultProps = {
+      foo: 10000099999
+  }
+
+  render () {
+      return (<div>Hello</div>);
+  }
+}
+```
+
+Because **react-doc-generator** uses **react-docgen** library, you can [follow other examples here](https://github.com/reactjs/react-docgen).
+
 ## Demo
 
   * [Example output](https://github.com/marborkowski/react-doc-generator/blob/master/demo/DOCUMENTATION.md)
 
 ## Terminal
+
+This is an example of what you'll see in your terminal.
 
 ![Terminal](https://raw.githubusercontent.com/marborkowski/react-doc-generator/master/demo/terminal.png)
 

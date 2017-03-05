@@ -1,7 +1,7 @@
 {
   "name": "react-doc-generator",
   "version": "1.1.0",
-  "description": "",
+  "description": "Generate a simple React component documentation in Markdown.",
   "main": "dist/index.js",
   "bin": {
     "react-doc-generator": "dist/react-doc-generator.js"
