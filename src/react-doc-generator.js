@@ -13,6 +13,7 @@ const pkg = require('../package.json');
 const table = new Table({
     head: [
         Colors.cyan('Path'),
+        Colors.cyan('Components'),
         Colors.cyan('Status')
     ]
 });
@@ -75,11 +76,13 @@ if (Command.args.length !== 1) {
                 templateData.files.push({ filename, components });
                 table.push([
                     filename,
+                    components.length,
                     Colors.green(`OK.`)
                 ]);
             } catch (e) {
                 table.push([
                     filename,
+                    components.length,
                     Colors.red(`You have to export at least one valid React Class!`)
                 ]);
             }
