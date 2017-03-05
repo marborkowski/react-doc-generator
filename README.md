@@ -29,6 +29,9 @@ Options:
   -o, --output <file>             Markdown file to write. Default: 'README.MD'
 ```
 
+## Terminal
+
+![Terminal](https://raw.githubusercontent.com/marborkowski/react-doc-generator/master/demo/terminal.png)
 
 ### License
 
