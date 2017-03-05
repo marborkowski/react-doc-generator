@@ -4,12 +4,11 @@
 
 Generate simple React components documentation in [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
 
+## Installation
+
+`$ npm install -save-dev react-doc-generator`
 
 ## Usage
-
-Example:
-
-`$ react-doc-generator src -o DOCUMENTATION.md`
 
 Check every option runnig `react-doc-generator` with `--help` or `-h`:
 
@@ -28,6 +27,31 @@ Options:
   -t, --title [value]>            Document title. Default: 'Components'
   -o, --output <file>             Markdown file to write. Default: 'README.MD'
 ```
+
+### By the command line
+
+Example:
+
+`$ react-doc-generator src -o DOCUMENTATION.md`
+
+### NPM script
+
+Example:
+
+In your `package.json` put:
+```
+{
+  (...)
+  "scripts": {
+    "doc": "react-doc-generator ./app/components/custom -o DOCUMENTATION.md"
+  }
+  (...)
+}
+```
+
+so then you are able to call this script by the command line:
+
+`$ npm run doc`
 
 ## API
 
@@ -69,7 +93,7 @@ export class MyComponent extends React.Component {
 }
 ```
 
-Because **react-doc-generator** uses **react-docgen** library, you can [follow other examples here](https://github.com/reactjs/react-docgen).
+Because [**react-doc-generator**](https://github.com/marborkowski/react-doc-generator) uses [**react-docgen**](https://github.com/reactjs/react-docgen) library, you can [follow other examples here](https://github.com/reactjs/react-docgen).
 
 ## Demo
 
