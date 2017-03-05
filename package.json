@@ -12,7 +12,7 @@
     "watch": "babel src -D -d dist --ignore '__tests__,__mocks__' --watch",
     "pretest": "npm run transpile",
     "preversion": "npm run lint",
-    "postversion": "git push && git push --tags && npm publish",
+    "postversion": "git push && git push $npm_package_version && npm publish",
     "test": "jest"
   },
   "repository": {
