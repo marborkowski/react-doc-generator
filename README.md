@@ -2,7 +2,7 @@
 [![npm version](https://img.shields.io/npm/v/react-doc-generator.svg?style=flat-square)](https://www.npmjs.com/package/react-doc-generator)
 [![dependency status](https://img.shields.io/david/marborkowski/react-doc-generator.svg?style=flat-square)](https://david-dm.org/marborkowski/react-doc-generator)
 
-Generate simple React components documentation in [Markdown](https://en.wikipedia.org/wiki/Markdown).
+Generate simple React components documentation in [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
 
 
 ## Usage
