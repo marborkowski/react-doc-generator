@@ -1,4 +1,4 @@
-All Components
+Components
 ----------
 
 **app/components/custom/articles/articles.jsx**
