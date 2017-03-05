@@ -19,13 +19,14 @@ export class Component1 extends React.Component {
         React.PropTypes.number,
         React.PropTypes.string
       ]),
+      onExit: React.PropTypes.func
   }
 
   static defaultProps = {
-      /**
-       * Foo number of nothing.
-       */
-      foo: 10000099999
+      foo: 10000099999,
+      onExit: () => {
+          console.debug('onExit');
+      }
   }
 
   render () {

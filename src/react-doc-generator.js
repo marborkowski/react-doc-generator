@@ -71,6 +71,18 @@ if (Command.args.length !== 1) {
                         component.description = `${component.description}   \n\n`;
                     }
 
+                    // validate default values
+                    if (component.props) {
+                        Object.keys(component.props).forEach(key => {
+                            let obj = component.props[key];
+                            if (obj.defaultValue) {
+                                if ((/[^\w\s\.\&\:\-\+\*\,\!\@\%\$]+/igm).test(obj.defaultValue.value)) {
+                                    obj.defaultValue.value = '<See the source code>';
+                                }
+                            }
+                        });
+                    }
+
                     return component;
                 });
                 templateData.files.push({ filename, components });
