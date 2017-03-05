@@ -63,7 +63,8 @@
     "eslint-plugin-flowtype": "^2.30.0",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^2.2.3",
-    "eslint-plugin-react": "^6.10.0"
+    "eslint-plugin-react": "^6.10.0",
+    "jest-cli": "^19.0.2"
   },
   "babel": {
     "presets": [
@@ -72,5 +73,11 @@
   },
   "eslintConfig": {
     "extends": "react-app"
+  },
+  "jest": {
+    "roots": [
+      "src"
+    ],
+    "testRegex": "/__tests__/(.+?).test.js$"
   }
 }
