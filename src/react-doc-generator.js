@@ -19,7 +19,7 @@ const table = new Table({
 });
 
 Handlebars.registerHelper('inc', (value, options) => {
-    return parseInt(value) + 1;
+    return parseInt(value, 10) + 1;
 });
 
 console.log(Colors.white(`\n\nREACT DOC GENERATOR v${pkg.version}`));
@@ -76,7 +76,7 @@ if (Command.args.length !== 1) {
                         Object.keys(component.props).forEach(key => {
                             let obj = component.props[key];
                             if (obj.defaultValue) {
-                                if ((/[^\w\s\.\&\:\-\+\*\,\!\@\%\$]+/igm).test(obj.defaultValue.value)) {
+                                if ((/[^\w\s.&:\-+*,!@%$]+/igm).test(obj.defaultValue.value)) {
                                     obj.defaultValue.value = '<See the source code>';
                                 }
                             }
@@ -94,7 +94,7 @@ if (Command.args.length !== 1) {
             } catch (e) {
                 table.push([
                     filename,
-                    components.length,
+                    0,
                     Colors.red(`You have to export at least one valid React Class!`)
                 ]);
             }

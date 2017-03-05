@@ -6,7 +6,7 @@ var React = require('react');
  * gdfgfdgdfg dfgdfgfdg dfg df getDefaultPropsg fdgfd
  * gfdgfdgdfgfdg.
  *
- * 
+ *
  * Example:
  * ```html
  * <Component name="bebe" />
@@ -38,7 +38,11 @@ var Component = React.createClass({
   },
 
   render: function() {
-    // ...
+    return (
+      <div>
+        Hello World!
+      </div>
+    );
   }
 });
 
