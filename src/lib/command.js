@@ -4,7 +4,7 @@ const pkg = require('../../package.json');
 export default (function Command () {
 
   const list = (val) => {
-      val = val.replace(/[, ]+/g, ",").trim();
+      val = val.replace(/[, ]+/g, ',').trim();
       return val.split(',').filter(value => value.length > 0);
   }
 
