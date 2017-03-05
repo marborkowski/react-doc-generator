@@ -41,11 +41,11 @@ Example:
 In your `package.json` put:
 ```
 {
-  (...)
+  // ...
   "scripts": {
     "doc": "react-doc-generator ./app/components/custom -o DOCUMENTATION.md"
   }
-  (...)
+  // ...
 }
 ```
 
