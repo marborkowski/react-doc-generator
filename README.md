@@ -1,6 +1,7 @@
 # React DOC Generator
 [![npm version](https://img.shields.io/npm/v/react-doc-generator.svg?style=flat-square)](https://www.npmjs.com/package/react-doc-generator)
 [![dependency status](https://img.shields.io/david/marborkowski/react-doc-generator.svg?style=flat-square)](https://david-dm.org/marborkowski/react-doc-generator)
+[![build status](https://img.shields.io/travis/marborkowski/react-doc-generator.svg?style=flat-square)](https://travis-ci.org/marborkowski/react-doc-generator)
 
 Generate simple React components documentation in [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
 
