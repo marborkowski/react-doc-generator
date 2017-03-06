@@ -24,6 +24,18 @@ function run(args) {
   })
 }
 
+function loadDoc() {
+  return new Promise((resolve, reject) => {
+      fs.readFile('./dist/DOCUMENTATION.md', 'utf8', function(err, data) {
+          if (err) {
+              reject(err);
+          } else {
+              resolve(data);
+          }
+      });
+  })
+}
+
 describe('react-doc-generator', () => {
     it('has the proper console output', () => {
         return run(
@@ -77,4 +89,38 @@ describe('react-doc-generator', () => {
             expect(output).toContain('Options:');
         });
     }, TEST_TIMEOUT);
+
+    describe('output file', () => {
+        it('has needed values', () => {
+            return run(
+                [
+                  'src/__mocks__',
+                  '-o',
+                  './dist/DOCUMENTATION.md',
+                  '-t',
+                  'MyTitleXYZ'
+                ]
+            ).then((stdout, stderr) => {
+                if (stderr) {
+                    throw stderr;
+                }
+
+                return loadDoc().then(
+                    result => {
+                        const lines = result.split('\n');
+                        expect(lines[0]).toContain('MyTitleXYZ');
+                        expect(result).toContain('Property | Type | Required | Default value | Description');
+                        expect(result).toContain(':--- | :--- | :--- | :--- | :---');
+                        expect((/^\*\*([a-zA-Z/_.]+)\*\*$/igm).test(result)).toBeTruthy();
+                        expect((/^### (.*)$/igm).test(result)).toBeTruthy();
+                        expect(lines[lines.length - 2]).toContain(pkg.version);
+                        expect(lines[lines.length - 2]).toContain('marborkowski');
+                    },
+                    reason => {
+                        throw reason;
+                    }
+                );
+            });
+        }, TEST_TIMEOUT);
+    });
 });
