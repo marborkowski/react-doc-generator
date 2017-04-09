@@ -22,24 +22,51 @@ Handlebars.registerHelper('inc', (value, options) => {
     return parseInt(value, 10) + 1;
 });
 
+function getOutputConfig() {
+	const result = {
+		outputFile: Command.output || 'DOCUMENTATION.TXT',
+		template: null,
+		format: Command.format || 'markdown'
+	};
+	
+	if(['markdown', 'asciidoc'].indexOf(result.format) === -1){
+		throw 'Invalid format: ' + result.format + ', expected one of (asciidoc|markdown)';
+	}
+	
+	result.template = Command.handlebarTemplate || path.join(__dirname, 'template-' + result.format + '.handlebars');
+	
+	if(!Command.output && !Command.handlebarTemplate){		
+		if(result.format == 'asciidoc') {
+			result.outputFile = 'DOCUMENTATION.ADOC';
+		} else if (result.format == 'markdown') {
+			result.outputFile = 'DOCUMENTATION.MD';
+		}
+	}
+	
+	return result;
+}
+
 console.log(Colors.white(`\n\nREACT DOC GENERATOR v${pkg.version}`));
 console.log(Colors.white(`by Marcin Borkowski <marborkowski@gmail.com>`));
 
 
-
-const output = fs.createWriteStream(Command.output);
 const templateData = {
     files: [],
     version: pkg.version,
     documentTitle: Command.title
 };
 
-const template = Handlebars.compile(`${fs.readFileSync(path.join(__dirname, 'template.handlebars'))}`);
 
 if (Command.args.length !== 1) {
     console.log(`${Colors.red('Please specify <dir> as the first argument!')}`);
     Command.help();
 } else {
+	
+	let outputConfig = getOutputConfig();
+
+	const output = fs.createWriteStream(outputConfig.outputFile);
+	const template = Handlebars.compile(`${fs.readFileSync(outputConfig.template)}`);
+
     readFiles(
         Command.args[0],
         {
