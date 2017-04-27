@@ -2,5 +2,6 @@
   "ignore": [
     "__tests__",
     "__mocks__"
-  ]
+  ],
+  "presets": [ "es2015", "es2016" ]
 }
