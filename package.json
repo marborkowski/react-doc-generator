@@ -9,11 +9,11 @@
   "scripts": {
     "lint": "eslint src",
     "transpile": "babel src -D -d dist",
-	"build": "npm run transpile",
+    "build": "babel src -D -d dist",
     "watch": "babel src -D -d dist --watch",
     "pretest": "npm run transpile",
     "preversion": "npm run lint",
-	"prepublish": "npm run transpile",
+    "prepublish": "babel src -D -d dist",
     "test": "jest"
   },
   "repository": {
