@@ -111,6 +111,10 @@ This is an example of what you'll see in your terminal.
 
 ![Terminal](https://raw.githubusercontent.com/frode-carlsen/react-asciidoc-generator/master/demo/terminal.png)
 
+### Acknowledgemens
+
+Forked from original module 'react-doc-generator' by Marcin Borowski (https://github.com/marborkowski/react-doc-generator)
+
 ### Licenses
 
 <sub>MIT License</sub>  
