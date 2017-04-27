@@ -67,8 +67,8 @@ if (Command.args.length !== 1) {
         Command.args[0],
         {
             match: new RegExp('\\.(?:' + Command.extensions.join('|') + ')$'),
-            exclude: new RegExp('\\.(?:' + Command.excludePatterns.join('|') + ')$'),
-            excludeDir: new RegExp('\\.(?:' + Command.ignore.join('|') + ')$'),
+            exclude: Command.excludePatterns,
+            excludeDir: Command.ignore,
         },
         (err, content, filename, next) => {
             if (err) {
