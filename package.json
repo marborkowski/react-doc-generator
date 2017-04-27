@@ -1,10 +1,10 @@
 {
-  "name": "react-doc-generator",
+  "name": "react-asciidoc-generator",
   "version": "1.2.5",
-  "description": "Generate a simple React Component documentation in Markdown.",
+  "description": "Generate a simple React Component documentation in Asciidoc, Markdown, or custom template",
   "main": "dist/index.js",
   "bin": {
-    "react-doc-generator": "dist/react-doc-generator.js"
+    "react-asciidoc-generator": "dist/react-asciidoc-generator.js"
   },
   "scripts": {
     "lint": "eslint src",
@@ -16,14 +16,20 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/marborkowski/react-doc-generator.git"
+    "url": "git+https://github.com/frode-carlsen/react-asciidoc-generator.git"
   },
-  "author": "Marcin Borkowski",
+  "author": "Frode Carlsen",
+  "contributors": [
+     { 
+	   "name": "Marcin Borkowski",
+	   "url": "https://github.com/marborkowski/react-doc-generator"
+	 }
+  ]
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/marborkowski/react-doc-generator/issues"
+    "url": "https://github.com/frode-carlsen/react-asciidoc-generator/issues"
   },
-  "homepage": "https://github.com/marborkowski/react-doc-generator#readme",
+  "homepage": "https://github.com/frode-carlsen/react-asciidoc-generator#readme",
   "keywords": [
     "react",
     "react-docgen",
