@@ -1,4 +1,4 @@
-# react-doc-generator
+# react-asciidoc-generator
 # Logs
 demo
 logs
@@ -30,6 +30,7 @@ build/Release
 
 # Dependency directories
 node_modules
+node
 jspm_packages
 
 # Optional npm cache directory
