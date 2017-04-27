@@ -1,6 +1,6 @@
 {
   "name": "react-asciidoc-generator",
-  "version": "1.5.2",
+  "version": "1.5.3",
   "description": "Generate a simple React Component documentation in Asciidoc, Markdown, or custom template",
   "main": "dist/index.js",
   "bin": {
