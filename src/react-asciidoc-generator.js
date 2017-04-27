@@ -26,7 +26,7 @@ function getOutputConfig() {
 	const result = {
 		outputFile: Command.output || 'DOCUMENTATION.TXT',
 		template: null,
-		format: Command.format || 'markdown'
+		format: Command.format || 'asciidoc'
 	};
 	
 	if(['markdown', 'asciidoc'].indexOf(result.format) === -1){
@@ -45,10 +45,6 @@ function getOutputConfig() {
 	
 	return result;
 }
-
-console.log(Colors.white(`\n\nREACT DOC GENERATOR v${pkg.version}`));
-console.log(Colors.white(`by Marcin Borkowski <marborkowski@gmail.com>`));
-
 
 const templateData = {
     files: [],
