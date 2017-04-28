@@ -30,7 +30,7 @@ Options:
   -x, --extensions <items>        Include only these file extensions. Default: js,jsx
   -f, --format <format>           Output format (asciiddoc|asciidoc) [asciidoc]
   -i, --ignore <items>            Folders to ignore. Default: node_modules,__tests__,__mocks__
-  -e, --exclude-patterns <items>  Filename patterns to exclude (may be comma-separated list of regexp). Default: '*.spec.jsx','*.spec.js' 
+  -e, --exclude-patterns <items>  Filename patterns to exclude (may be comma-separated list of regexp). Default: '.*\.spec.(jsx|js)' 
   -t, --title [value]>            Document title. Default: 'Components'
   -o, --output <file>             Output file to write. Default (asciidoc): 'DOCUMENTATION.ADOC'. Default (markdown): 'DOCUMENTATION.MD'
   --handlebar-template [path]     Custom handlebar output template. Alternative to --format.

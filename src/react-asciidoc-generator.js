@@ -63,7 +63,7 @@ if (Command.args.length !== 1) {
 	const output = fs.createWriteStream(outputConfig.outputFile);
 	const template = Handlebars.compile(`${fs.readFileSync(outputConfig.template)}`);
 
-	const excludeFilePatterns = new RegExp('(?:' + Command.excludePatterns.join('|') + ')$');
+	const excludeFilePatterns = new RegExp('^.*(?:' + Command.excludePatterns.join('|') + ')$');
     readFiles(
         Command.args[0],
         {
