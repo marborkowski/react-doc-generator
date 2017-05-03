@@ -64,8 +64,9 @@ if (Command.args.length !== 1) {
 	const template = Handlebars.compile(`${fs.readFileSync(outputConfig.template)}`);
 
 	const excludeFilePatterns = new RegExp('^.*(?:' + Command.excludePatterns.join('|') + ')$');
+	const rootDir = path.normalize(Command.args[0]);
     readFiles(
-        Command.args[0],
+        rootDir,
         {
             match: new RegExp('\\.(?:' + Command.extensions.join('|') + ')$'),
             excludeDir: Command.ignore,
@@ -76,7 +77,7 @@ if (Command.args.length !== 1) {
             }
 			
 			if(!filename.match(excludeFilePatterns)) {
-
+				var abbrevFilename = filename.replace(rootDir, '');
 				try {
 					let components = parse(content, resolver.findAllExportedComponentDefinitions);
 					components = components.map(component => {
@@ -110,15 +111,15 @@ if (Command.args.length !== 1) {
 
 						return component;
 					});
-					templateData.files.push({ filename, components });
+					templateData.files.push({ abbrevFilename, components });
 					table.push([
-						filename,
+						abbrevFilename,
 						components.length,
 						Colors.green(`OK.`)
 					]);
 				} catch (e) {
 					table.push([
-						filename,
+						abbrevFilename,
 						0,
 						Colors.red(`You have to export at least one valid React Class!`)
 					]);
