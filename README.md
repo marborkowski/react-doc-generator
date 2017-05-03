@@ -1,39 +1,46 @@
 # React DOC Generator
-[![npm version](https://img.shields.io/npm/v/react-doc-generator.svg?style=flat-square)](https://www.npmjs.com/package/react-doc-generator)
-[![dependency status](https://img.shields.io/david/marborkowski/react-doc-generator.svg?style=flat-square)](https://david-dm.org/marborkowski/react-doc-generator)
-[![build status](https://img.shields.io/travis/marborkowski/react-doc-generator.svg?style=flat-square)](https://travis-ci.org/marborkowski/react-doc-generator)
+[![npm version](https://img.shields.io/npm/v/react-asciidoc-generator.svg?style=flat-square)](https://www.npmjs.com/package/react-asciidoc-generator)
+[![dependency status](https://img.shields.io/david/frode-carlsen/react-asciidoc-generator.svg?style=flat-square)](https://david-dm.org/frode-carlsen/react-asciidoc-generator)
+[![build status](https://img.shields.io/travis/frode-carlsen/react-asciidoc-generator.svg?style=flat-square)](https://travis-ci.org/frode-carlsen/react-asciidoc-generator)
 
-Generate simple React components documentation in [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
+This is a fork of [react-doc-generator](https://github.com/frode-carlsen/react-doc-generator) to provide additional features for asciidoc or custom templates.
+
+Generate simple React components documentation in either
+* [Asciidoc](http://asciidoctor.org/docs/).
+* [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
+* Any custom handlebar template
 
 ## Installation
 
-`$ npm install -save-dev react-doc-generator`
+`$ npm install -save-dev react-asciidoc-generator`
 
 ## Usage
 
-Check every option runnig `react-doc-generator` with `--help` or `-h`:
+Check every option running `react-asciidoc-generator` with `--help` or `-h`:
 
 ```
-$ react-doc-generator --help
+$ react-asciidoc-generator --help
 
-Usage: react-doc-generator <dir> [options]
+Usage: react-asciidoc-generator <dir> [options]
 
 Options:
 
   -h, --help                      output usage information
   -V, --version                   output the version number
   -x, --extensions <items>        Include only these file extensions. Default: js,jsx
+  -f, --format <format>           Output format (asciiddoc|asciidoc) [asciidoc]
   -i, --ignore <items>            Folders to ignore. Default: node_modules,__tests__,__mocks__
-  -e, --exclude-patterns <items>  Filename patterns to exclude. Default: []
+  -e, --exclude-patterns <items>  Filename patterns to exclude (may be comma-separated list of regexp). Default: '.*\.spec.(jsx|js)' 
   -t, --title [value]>            Document title. Default: 'Components'
-  -o, --output <file>             Markdown file to write. Default: 'README.MD'
+  -o, --output <file>             Output file to write. Default (asciidoc): 'DOCUMENTATION.ADOC'. Default (markdown): 'DOCUMENTATION.MD'
+  --handlebar-template [path]     Custom handlebar output template. Alternative to --format.
 ```
 
 ### By the command line
 
 Example:
 
-`$ react-doc-generator src -o DOCUMENTATION.md`
+`$ react-asciidoc-generator src -o DOCUMENTATION.adoc
 
 ### NPM script
 
@@ -44,7 +51,7 @@ In your `package.json` put:
 {
   // ...
   "scripts": {
-    "doc": "react-doc-generator ./app/components/custom -o DOCUMENTATION.md"
+    "doc": "react-asciidoc-generator ./app/components/custom -o DOCUMENTATION.ADOC"
   }
   // ...
 }
@@ -94,22 +101,26 @@ export class MyComponent extends React.Component {
 }
 ```
 
-Because [**react-doc-generator**](https://github.com/marborkowski/react-doc-generator) uses [**react-docgen**](https://github.com/reactjs/react-docgen) library, you can [follow other examples here](https://github.com/reactjs/react-docgen).
+Because [**react-asciidoc-generator**](https://github.com/frode-carlsen/react-asciidoc-generator) uses [**react-docgen**](https://github.com/reactjs/react-docgen) library, you can [follow other examples here](https://github.com/reactjs/react-docgen).
 
 ## Demo
 
-  * [Example output](https://github.com/marborkowski/react-doc-generator/blob/master/demo/DOCUMENTATION.md)
+  * [Example output](https://github.com/frode-carlsen/react-asciidoc-generator/blob/master/demo/DOCUMENTATION.adoc)
 
 ## Terminal
 
 This is an example of what you'll see in your terminal.
 
-![Terminal](https://raw.githubusercontent.com/marborkowski/react-doc-generator/master/demo/terminal.png)
+![Terminal](https://raw.githubusercontent.com/frode-carlsen/react-asciidoc-generator/master/demo/terminal.png)
 
-### License
+### Acknowledgemens
+
+Forked from original module 'react-doc-generator' by Marcin Borowski (https://github.com/marborkowski/react-doc-generator)
+
+### Licenses
 
 <sub>MIT License</sub>  
-<sub>Copyright (c) 2017 Marcin Borkowski (<marborkowski@gmail.com>)</sub>  
+<sub>Copyright (c) 2017 Marcin Borkowski (<marborowski@gmail.com>)</sub>  
 <sub>Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights

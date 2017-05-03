@@ -1,5 +1,6 @@
-# react-doc-generator
+# react-asciidoc-generator
 dist
+node
 
 # Logs
 logs
@@ -38,3 +39,8 @@ jspm_packages
 
 # Optional REPL history
 .node_repl_history
+
+#Other
+/cmd
+/node
+pom.xml

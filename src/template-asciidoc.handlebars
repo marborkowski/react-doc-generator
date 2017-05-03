@@ -1,0 +1,29 @@
+{{#if documentTitle}}
+= {{documentTitle}}
+{{/if}}
+
+:numbered:
+
+{{#each files}}
+
+== File: *{{filename}}*
+
+{{#each components}}
+=== {{title}}
+
+{{{description}}}
+
+{{#if props}}
+[options="header"]
+|===
+|Property | Type | Required | Default value | Description
+{{#each props}}
+|{{@key}}|{{type.name}}|{{#if required}}yes{{else}}no{{/if}}|{{defaultValue.value}}|{{description}}
+{{/each}}
+
+|===
+{{/if}}
+
+{{/each}}
+
+{{/each}}

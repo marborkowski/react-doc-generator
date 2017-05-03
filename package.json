@@ -1,29 +1,34 @@
 {
-  "name": "react-doc-generator",
-  "version": "1.2.5",
-  "description": "Generate a simple React Component documentation in Markdown.",
+  "name": "react-asciidoc-generator",
+  "version": "1.5.8",
+  "description": "Generate a simple React Component documentation in Asciidoc, Markdown, or custom template",
   "main": "dist/index.js",
   "bin": {
-    "react-doc-generator": "dist/react-doc-generator.js"
+    "react-asciidoc-generator": "dist/react-asciidoc-generator.js"
   },
   "scripts": {
     "lint": "eslint src",
-    "transpile": "babel src -D -d dist --ignore '__tests__, __mocks__'",
-    "watch": "babel src -D -d dist --ignore '__tests__,__mocks__' --watch",
+    "transpile": "babel src -D -d dist",
+    "build": "babel src -D -d dist",
+    "watch": "babel src -D -d dist --watch",
     "pretest": "npm run transpile",
     "preversion": "npm run lint",
+    "prepublish": "babel src -D -d dist",
     "test": "jest"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/marborkowski/react-doc-generator.git"
+    "url": "git+https://github.com/frode-carlsen/react-asciidoc-generator.git"
   },
-  "author": "Marcin Borkowski",
+  "author": "Frode Carlsen",
+  "contributors": [
+    "Marcin Borkowski <marborowski@gmail.com> (https://github.com/marborkowski/react-doc-generator)"
+  ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/marborkowski/react-doc-generator/issues"
+    "url": "https://github.com/frode-carlsen/react-asciidoc-generator/issues"
   },
-  "homepage": "https://github.com/marborkowski/react-doc-generator#readme",
+  "homepage": "https://github.com/frode-carlsen/react-asciidoc-generator#readme",
   "keywords": [
     "react",
     "react-docgen",
@@ -58,6 +63,8 @@
     "babel-eslint": "^7.1.1",
     "babel-jest": "^19.0.0",
     "babel-preset-env": "^1.2.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-es2016": "^6.24.1",
     "eslint": "^3.17.0",
     "eslint-config-react-app": "^0.5.2",
     "eslint-plugin-flowtype": "^2.30.0",

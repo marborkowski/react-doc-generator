@@ -1,0 +1,67 @@
+= Components
+
+:numbered:
+
+
+== File: *..\react-doc-generator-test\test\ExampleComponent.js*
+
+=== General component description.
+
+fdgdfgdf gfdgfdg fdgfdgdfg   
+gdfgfdgdfg dfgdfgfdg dfg df getDefaultPropsg fdgfd   
+gfdgfdgdfgfdg.   
+   
+   
+Example:   
+```html   
+<Component name="bebe" />   
+```   
+
+
+
+[options="header"]
+|===
+|Property | Type | Required | Default value | Description
+|foo|number|no|42|Description of prop &quot;foo&quot;.
+|bar|custom|no|21|Description of prop &quot;bar&quot; (a custom validation function).
+|baz|union|no||
+
+|===
+
+
+
+== File: *..\react-doc-generator-test\test\inside\OtherExampleComponent.js*
+
+=== General component description.
+
+
+
+[options="header"]
+|===
+|Property | Type | Required | Default value | Description
+|foo|number|no|10000099999|Description of prop &quot;foo&quot;.
+|bar|custom|no||Description of prop &quot;bar&quot; (a custom validation function).
+|baz|union|no||
+|onExit|func|no|&lt;See the source code&gt;|
+
+|===
+
+=== DUPA
+
+General another component description.
+Blah blah blah...
+fdfdfsdf
+fdsfsd   
+
+
+
+[options="header"]
+|===
+|Property | Type | Required | Default value | Description
+|foo|number|no||Description of prop &quot;foo&quot;.
+|bar|custom|no||Description of prop &quot;bar&quot; (a custom validation function).
+|baz|union|no||
+
+|===
+
+
