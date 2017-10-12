@@ -80,6 +80,14 @@ if (Command.args.length !== 1) {
                                     obj.defaultValue.value = '<See the source code>';
                                 }
                             }
+                            if (obj.description) {
+                              const processedDescription = obj.description
+                              .split('\n')
+                              .map(text => text.replace(/(^\s+|\s+$)/, ''))
+                              .map(hasValidValue => hasValidValue)
+                              .join(' ');
+                              obj.description = processedDescription;
+                            }
                         });
                     }
 
