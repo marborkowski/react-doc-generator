@@ -112,6 +112,8 @@ describe('react-doc-generator', () => {
                         expect(result).toContain('Property | Type | Required | Default value | Description');
                         expect(result).toContain(':--- | :--- | :--- | :--- | :---');
                         expect(result).toContain('Description of prop &quot;toe&quot; has one break line here following more comments and has default empty string.');
+                        expect(result).toContain('toe|string|no|&#x27;&#x27;|');
+                        expect(result).toContain('finger|string|no|&#x27;medium&#x27;|');
                         expect((/^\*\*([a-zA-Z/_.]+)\*\*$/igm).test(result)).toBeTruthy();
                         expect((/^### (.*)$/igm).test(result)).toBeTruthy();
                         expect(lines[lines.length - 2]).toContain(pkg.version);

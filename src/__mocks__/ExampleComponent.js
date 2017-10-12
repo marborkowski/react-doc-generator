@@ -22,6 +22,10 @@ var Component = React.createClass({
      */
     toe: PropTypes.string,
     /**
+     * Description of prop "finger".
+     */
+    finger: PropTypes.string,
+    /**
      * Description of prop "foo".
      */
     foo: PropTypes.number,
@@ -39,6 +43,7 @@ var Component = React.createClass({
 
   getDefaultProps: function() {
     return {
+      finger: 'medium',
       toe: '',
       foo: 42,
       bar: 21

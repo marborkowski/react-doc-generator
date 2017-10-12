@@ -76,7 +76,10 @@ if (Command.args.length !== 1) {
                         Object.keys(component.props).forEach(key => {
                             let obj = component.props[key];
                             if (obj.defaultValue) {
-                                if ((/[^\w\s.&:\-+*,!@%$]+/igm).test(obj.defaultValue.value)) {
+                                const isString = obj.type.name === 'string'
+                                    && typeof obj.defaultValue.value === 'string';
+                                const isInvalidValue = (/[^\w\s.&:\-+*,!@%$]+/igm).test(obj.defaultValue.value);
+                                if (isInvalidValue && !isString) {
                                     obj.defaultValue.value = '<See the source code>';
                                 }
                             }
