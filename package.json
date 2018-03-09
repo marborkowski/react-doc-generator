@@ -51,7 +51,8 @@
     "node-dir": "^0.1.16",
     "react": "^15.4.2",
     "react-docgen": "^2.13.0",
-    "react-dom": "^15.4.2"
+    "react-dom": "^15.4.2",
+    "prop-types": "^15.6.0"
   },
   "devDependencies": {
     "babel-cli": "^6.23.0",

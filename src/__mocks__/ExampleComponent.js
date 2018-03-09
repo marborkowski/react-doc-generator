@@ -1,4 +1,5 @@
 var React = require('react');
+var PropTypes = require('prop-types');
 
 /**
  * General component description.
@@ -15,23 +16,35 @@ var React = require('react');
 var Component = React.createClass({
   propTypes: {
     /**
+     * Description of prop "toe" has one break line
+     * here following more comments and has default
+     * empty string.
+     */
+    toe: PropTypes.string,
+    /**
+     * Description of prop "finger".
+     */
+    finger: PropTypes.string,
+    /**
      * Description of prop "foo".
      */
-    foo: React.PropTypes.number,
+    foo: PropTypes.number,
     /**
      * Description of prop "bar" (a custom validation function).
      */
     bar: function(props, propName, componentName) {
       // ...
     },
-    baz: React.PropTypes.oneOfType([
-      React.PropTypes.number,
-      React.PropTypes.string
+    baz: PropTypes.oneOfType([
+      PropTypes.number,
+      PropTypes.string
     ]),
   },
 
   getDefaultProps: function() {
     return {
+      finger: 'medium',
+      toe: '',
       foo: 42,
       bar: 21
     };
