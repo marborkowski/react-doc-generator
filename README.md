@@ -2,6 +2,7 @@
 [![npm version](https://img.shields.io/npm/v/react-asciidoc-generator.svg?style=flat-square)](https://www.npmjs.com/package/react-asciidoc-generator)
 [![dependency status](https://img.shields.io/david/frode-carlsen/react-asciidoc-generator.svg?style=flat-square)](https://david-dm.org/frode-carlsen/react-asciidoc-generator)
 [![build status](https://img.shields.io/travis/frode-carlsen/react-asciidoc-generator.svg?style=flat-square)](https://travis-ci.org/frode-carlsen/react-asciidoc-generator)
+[![Known Vulnerabilities](https://snyk.io/test/github/frode-carlsen/react-asciidoc-generator/badge.svg?targetFile=package.json)](https://snyk.io/test/github/frode-carlsen/react-asciidoc-generator?targetFile=package.json)
 
 This is a fork of [react-doc-generator](https://github.com/frode-carlsen/react-doc-generator) to provide additional features for asciidoc or custom templates.
 
