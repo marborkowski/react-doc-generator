@@ -125,7 +125,7 @@ async function generateReactDocs({
         templateData.files.push({ filename, components });
         cliOutput.push([filename, components.length, Colors.green(`OK.`)]);
       } catch (e) {
-        console.error("In error");
+        console.error("In error",e);
         cliOutput.push([
           filename,
           0,
