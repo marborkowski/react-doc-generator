@@ -23,10 +23,25 @@ export const isDefaultValueTypeString = prop => {
 };
 export const isInvalidDefaultValue = value =>
   /[^\w\s.&:\-+*,!@%$]+/gim.test(value);
+export const getTypeOfProp = (prop) => {
+  if(!prop){
+    return ''
+  }
+  if(prop.type){
+    return prop.type
+  }else if(prop.flowType){
+    const typeName = prop.flowType.raw ? prop.flowType.raw : prop.flowType.name
+    return {
+      name: typeName
+    }
+  }
+
+}  
 export function processProp(prop) {
   const { defaultValue = {} } = prop;
   const isString = isDefaultValueTypeString(prop);
   const isInvalidValue = isInvalidDefaultValue(defaultValue.value);
+  const processedType = getTypeOfProp(prop)
   const processedDefaultValue =
     defaultValue && isInvalidValue && isString === false
       ? "See code"
@@ -42,7 +57,8 @@ export function processProp(prop) {
   return {
     ...prop,
     defaultValue: { ...prop.defaultValue, value: processedDefaultValue },
-    description: processedDescription
+    description: processedDescription,
+    type: processedType,
   };
 }
 function parseSingleFile(fileContent) {

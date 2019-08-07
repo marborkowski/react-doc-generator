@@ -7,7 +7,6 @@ jasmine.DEFAULT_TIMEOUT_INTERVAL = TEST_TIMEOUT; // eslint-disable-line no-undef
 const path = require("path");
 const fs = require("fs");
 const spawn = require("child_process").spawn;
-const pkg = require("../../package.json");
 
 function run(command, args) {
   let stdout = [];

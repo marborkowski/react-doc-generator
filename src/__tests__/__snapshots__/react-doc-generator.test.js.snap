@@ -50,6 +50,66 @@ Array [
 ",
   "-----
 ",
+  "**C:\\\\Users\\\\rravindran\\\\metocean\\\\react-doc-generator\\\\src\\\\__mocks__\\\\OtherExampleComponent.js**
+",
+  "
+",
+  "### 1. Component1
+",
+  "
+",
+  "null   ",
+  "",
+  "
+",
+  "
+",
+  "
+",
+  "Property | Type | Required | Default value | Description
+",
+  ":--- | :--- | :--- | :--- | :---
+",
+  "foo|number|no|10000099999|
+",
+  "bar|() &#x3D;&gt; void|yes||Description of prop &quot;bar&quot; (a custom validation function).
+",
+  "baz|number|string|yes||
+",
+  "onExit|() &#x3D;&gt; void|no|() &#x3D;&gt; {
+",
+  "    console.debug(&#x27;onExit&#x27;);
+",
+  "}|
+",
+  "### 2. DUPA
+",
+  "
+",
+  "Blah blah blah...
+   ",
+  "fdfdfsdf
+   ",
+  "fdsfsd   ",
+  "",
+  "
+",
+  "
+",
+  "
+",
+  "Property | Type | Required | Default value | Description
+",
+  ":--- | :--- | :--- | :--- | :---
+",
+  "foo|number|yes||Description of prop &quot;foo&quot;.
+",
+  "bar|() &#x3D;&gt; mixed|yes||Description of prop &quot;bar&quot; (a custom validation function).
+",
+  "baz|number | string|yes||
+",
+  "-----
+",
   "**C:\\\\Users\\\\rravindran\\\\metocean\\\\react-doc-generator\\\\src\\\\__mocks__\\\\inside\\\\OtherExampleComponent.js**
 ",
   "
@@ -141,13 +201,112 @@ exports[`react-doc-generator has the proper console output 1`] = `
 
 [37mREACT DOC GENERATOR v1.2.5[39m
 [37mby Marcin Borkowski <marborkowski@gmail.com>[39m
-C:\\\\Users\\\\rravindran\\\\metocean\\\\react-doc-generator\\\\src\\\\__mocks__\\\\ExampleComponent.js,1,[32mOK.[39m,C:\\\\Users\\\\rravindran\\\\metocean\\\\react-doc-generator\\\\src\\\\__mocks__\\\\inside\\\\OtherExampleComponent.js,2,[32mOK.[39m
+{ type: { name: 'string' },
+  required: false,
+  description:
+   'Description of prop \\"toe\\" has one break line\\\\r\\\\nhere following more comments and has default\\\\r\\\\nempty string.',
+  defaultValue: { value: '\\\\'\\\\'', computed: false } } 'prop'
+{ type: { name: 'string' },
+  required: false,
+  description: 'Description of prop \\"finger\\".',
+  defaultValue: { value: '\\\\'medium\\\\'', computed: false } } 'prop'
+{ type: { name: 'number' },
+  required: false,
+  description: 'Description of prop \\"foo\\".',
+  defaultValue: { value: '42', computed: false } } 'prop'
+{ type:
+   { name: 'custom',
+     raw:
+      'function(props, propName, componentName) {\\\\r\\\\n  // ...\\\\r\\\\n}' },
+  required: false,
+  description: 'Description of prop \\"bar\\" (a custom validation function).',
+  defaultValue: { value: '21', computed: false } } 'prop'
+{ type: { name: 'union', value: [ [Object], [Object] ] },
+  required: false,
+  description: '' } 'prop'
+{ flowType: { name: 'number' },
+  required: false,
+  description: '',
+  defaultValue: { value: '10000099999', computed: false } } 'prop'
+{ flowType:
+   { name: 'signature',
+     type: 'function',
+     raw: '() => void',
+     signature: { arguments: [], return: [Object] } },
+  required: true,
+  description: 'Description of prop \\"bar\\" (a custom validation function).' } 'prop'
+{ flowType:
+   { name: 'union',
+     raw: 'number|string',
+     elements: [ [Object], [Object] ] },
+  required: true,
+  description: '' } 'prop'
+{ flowType:
+   { name: 'signature',
+     type: 'function',
+     raw: '() => void',
+     signature: { arguments: [], return: [Object] } },
+  required: false,
+  description: '',
+  defaultValue:
+   { value: '() => {\\\\r\\\\n    console.debug(\\\\'onExit\\\\');\\\\r\\\\n}',
+     computed: false } } 'prop'
+{ flowType: { name: 'number' },
+  required: true,
+  description: 'Description of prop \\"foo\\".' } 'prop'
+{ flowType:
+   { name: 'signature',
+     type: 'function',
+     raw: '() => mixed',
+     signature: { arguments: [], return: [Object] } },
+  required: true,
+  description: 'Description of prop \\"bar\\" (a custom validation function).' } 'prop'
+{ flowType:
+   { name: 'union',
+     raw: 'number | string',
+     elements: [ [Object], [Object] ] },
+  required: true,
+  description: '' } 'prop'
+{ type: { name: 'number' },
+  required: false,
+  description: 'Description of prop \\"foo\\".',
+  defaultValue: { value: '10000099999', computed: false } } 'prop'
+{ type:
+   { name: 'custom',
+     raw:
+      'function(props, propName, componentName) {\\\\r\\\\n  // ...\\\\r\\\\n}' },
+  required: false,
+  description: 'Description of prop \\"bar\\" (a custom validation function).' } 'prop'
+{ type: { name: 'union', value: [ [Object], [Object] ] },
+  required: false,
+  description: '' } 'prop'
+{ type: { name: 'func' },
+  required: false,
+  description: '',
+  defaultValue:
+   { value: '() => {\\\\r\\\\n    console.debug(\\\\'onExit\\\\');\\\\r\\\\n}',
+     computed: false } } 'prop'
+{ type: { name: 'number' },
+  required: false,
+  description: 'Description of prop \\"foo\\".' } 'prop'
+{ type:
+   { name: 'custom',
+     raw:
+      'function(props, propName, componentName) {\\\\r\\\\n  // ...\\\\r\\\\n}' },
+  required: false,
+  description: 'Description of prop \\"bar\\" (a custom validation function).' } 'prop'
+{ type: { name: 'union', value: [ [Object], [Object] ] },
+  required: false,
+  description: '' } 'prop'
+C:\\\\Users\\\\rravindran\\\\metocean\\\\react-doc-generator\\\\src\\\\__mocks__\\\\ExampleComponent.js,1,[32mOK.[39m,C:\\\\Users\\\\rravindran\\\\metocean\\\\react-doc-generator\\\\src\\\\__mocks__\\\\OtherExampleComponent.js,2,[32mOK.[39m,C:\\\\Users\\\\rravindran\\\\metocean\\\\react-doc-generator\\\\src\\\\__mocks__\\\\inside\\\\OtherExampleComponent.js,2,[32mOK.[39m
 
 
 ┌────────────────────────────────────────────────────────────────────────────────────────────────┬────────────┬────────┐
 │ [36mPath[39m                                                                                           │ [36mComponents[39m │ [36mStatus[39m │
 ├────────────────────────────────────────────────────────────────────────────────────────────────┼────────────┼────────┤
 │ C:\\\\Users\\\\rravindran\\\\metocean\\\\react-doc-generator\\\\src\\\\__mocks__\\\\ExampleComponent.js             │ 1          │ [32mOK.[39m    │
+├────────────────────────────────────────────────────────────────────────────────────────────────┼────────────┼────────┤
+│ C:\\\\Users\\\\rravindran\\\\metocean\\\\react-doc-generator\\\\src\\\\__mocks__\\\\OtherExampleComponent.js        │ 2          │ [32mOK.[39m    │
 ├────────────────────────────────────────────────────────────────────────────────────────────────┼────────────┼────────┤
 │ C:\\\\Users\\\\rravindran\\\\metocean\\\\react-doc-generator\\\\src\\\\__mocks__\\\\inside\\\\OtherExampleComponent.js │ 2          │ [32mOK.[39m    │
 └────────────────────────────────────────────────────────────────────────────────────────────────┴────────────┴────────┘
