@@ -1,0 +1,106 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GenerateReactDoc Should work 1`] = `
+Object {
+  "files": Array [
+    Object {
+      "components": Array [
+        Object {
+          "description": "fdgdfgdf gfdgfdg fdgfdgdfg
+   
+gdfgfdgdfg dfgdfgfdg dfg df getDefaultPropsg fdgfd
+   
+gfdgfdgdfgfdg.
+   
+   
+   
+Example:
+   
+\`\`\`html
+   
+<Component name=\\"bebe\\" />
+   
+\`\`\`   
+
+",
+          "methods": Array [],
+          "props": Object {
+            "propName": Object {
+              "description": "",
+              "required": false,
+              "type": Object {
+                "name": "union",
+                "value": Array [
+                  Object {
+                    "name": "number",
+                  },
+                  Object {
+                    "name": "string",
+                  },
+                ],
+              },
+            },
+          },
+          "title": "General component description.",
+        },
+      ],
+      "filename": "C:\\\\Users\\\\rravindran\\\\metocean\\\\react-doc-generator\\\\src\\\\__mocks__\\\\ExampleComponent.js",
+    },
+    Object {
+      "components": Array [
+        Object {
+          "description": "General component description.   
+
+",
+          "displayName": "Component1",
+          "methods": Array [],
+          "props": Object {
+            "propName": Object {
+              "defaultValue": Object {
+                "computed": false,
+                "value": "<See the source code>",
+              },
+              "description": "",
+              "required": false,
+              "type": Object {
+                "name": "func",
+              },
+            },
+          },
+          "title": "Component1",
+        },
+        Object {
+          "description": "General another component description.
+Blah blah blah...
+fdfdfsdf
+fdsfsd   
+
+",
+          "displayName": "DUPA",
+          "methods": Array [],
+          "props": Object {
+            "propName": Object {
+              "description": "",
+              "required": false,
+              "type": Object {
+                "name": "union",
+                "value": Array [
+                  Object {
+                    "name": "number",
+                  },
+                  Object {
+                    "name": "string",
+                  },
+                ],
+              },
+            },
+          },
+          "title": "DUPA",
+        },
+      ],
+      "filename": "C:\\\\Users\\\\rravindran\\\\metocean\\\\react-doc-generator\\\\src\\\\__mocks__\\\\inside\\\\OtherExampleComponent.js",
+    },
+  ],
+  "version": "1.2.5",
+}
+`;

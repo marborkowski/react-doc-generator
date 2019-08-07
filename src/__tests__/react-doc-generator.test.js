@@ -1,4 +1,5 @@
 // https://travis-ci.org/marborkowski/react-doc-generator
+
 const TEST_TIMEOUT = 120000;
 jasmine.DEFAULT_TIMEOUT_INTERVAL = TEST_TIMEOUT; // eslint-disable-line no-undef
 
@@ -12,15 +13,19 @@ function run(args) {
   let stdout = [];
   let stderr = [];
 
-  return new Promise(resolve => {
+  return new Promise((resolve,reject) => {
       let binPath = path.join(__dirname, '../../dist/react-doc-generator.js')
       fs.chmodSync(binPath, '0777');
+      console.log(binPath,args)
       let spawned = spawn(binPath, args);
 
       spawned.stdout.on('data', data => stdout.push(data));
       spawned.stderr.on('data', data => stderr.push(data));
       spawned.on('close', () => resolve([stdout.join(''), stderr.join('')]));
       spawned.on('error', err => { throw err; } );
+  }).catch((error) => {
+    console.log(error,'Error')
+    throw error
   })
 }
 
