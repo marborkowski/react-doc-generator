@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProcessProp Process prop should not modify the default value if the type is a string 1`] = `
+Object {
+  "defaultValue": Object {
+    "value": "somestring",
+  },
+  "description": "",
+  "type": Object {
+    "name": "string",
+  },
+}
+`;
+
+exports[`ProcessProp Process prop should not modify the default value if the type is not string but default value doesnt have special characters 1`] = `
+Object {
+  "defaultValue": Object {
+    "value": 22,
+  },
+  "description": "",
+  "type": Object {
+    "name": "number",
+  },
+}
+`;
+
+exports[`ProcessProp Process prop should overwrite the default value when type is not string and there are invalid characters 1`] = `
+Object {
+  "defaultValue": Object {
+    "value": "See code",
+  },
+  "description": "",
+  "type": Object {
+    "name": "number",
+  },
+}
+`;

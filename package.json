@@ -8,7 +8,7 @@
   },
   "scripts": {
     "lint": "eslint src",
-    "transpile": "babel src -D -d dist --ignore '__tests__, __mocks__'",
+    "transpile": "babel src -D -d dist --ignore '__tests__,__mocks__' --presets=@babel/preset-env,@babel/preset-flow,@babel/preset-react",
     "watch": "babel src -D -d dist --ignore '__tests__,__mocks__' --watch",
     "pretest": "npm run transpile",
     "preversion": "npm run lint",
@@ -52,22 +52,27 @@
     "react-docgen": "^2.13.0"
   },
   "peerDependencies": {
-    "prop-types": "^15.6.0",
-    "react": "^15.4.2",
-    "react-dom": "^15.4.2"
+    "prop-types": "^16.8.6",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
   },
   "devDependencies": {
-    "babel-cli": "^6.23.0",
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.0.0",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/polyfill": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "@babel/preset-flow": "^7.0.0",
+    "@babel/preset-react": "^7.0.0",
     "babel-eslint": "^7.1.1",
-    "babel-jest": "^19.0.0",
-    "babel-preset-env": "^1.2.0",
+    "babel-jest": "^24.8.0",
     "eslint": "^3.17.0",
     "eslint-config-react-app": "^0.5.2",
     "eslint-plugin-flowtype": "^2.30.0",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^2.2.3",
     "eslint-plugin-react": "^6.10.0",
-    "jest-cli": "^19.0.2"
+    "jest-cli": "^24.8.0"
   },
   "babel": {
     "presets": [
