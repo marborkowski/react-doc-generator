@@ -7,20 +7,14 @@ Array [
       Object {
         "components": Array [
           Object {
-            "description": "fdgdfgdf gfdgfdg fdgfdgdfg
-   
-gdfgfdgdfg dfgdfgfdg dfg df getDefaultPropsg fdgfd
-   
-gfdgfdgdfgfdg.
+            "description": "fdgdfgdf gfdgfdg fdgfdgdfg   
+gdfgfdgdfg dfgdfgfdg dfg df getDefaultPropsg fdgfd   
+gfdgfdgdfgfdg.   
    
    
-   
-Example:
-   
-\`\`\`html
-   
-<Component name=\\"bebe\\" />
-   
+Example:   
+\`\`\`html   
+<Component name=\\"bebe\\" />   
 \`\`\`   
 
 ",
@@ -95,7 +89,7 @@ Example:
             "title": "General component description.",
           },
         ],
-        "filename": "C:\\\\Users\\\\rravindran\\\\metocean\\\\react-doc-generator\\\\src\\\\__mocks__\\\\ExampleComponent.js",
+        "filename": "/Users/marcin/Projects/Private/react-doc-generator/src/__mocks__/ExampleComponent.js",
       },
       Object {
         "components": Array [
@@ -191,10 +185,8 @@ Example:
             "title": "Component1",
           },
           Object {
-            "description": "Blah blah blah...
-   
-fdfdfsdf
-   
+            "description": "Blah blah blah...   
+fdfdfsdf   
 fdsfsd   
 
 ",
@@ -261,7 +253,7 @@ fdsfsd
             "title": "DUPA",
           },
         ],
-        "filename": "C:\\\\Users\\\\rravindran\\\\metocean\\\\react-doc-generator\\\\src\\\\__mocks__\\\\OtherExampleComponent.js",
+        "filename": "/Users/marcin/Projects/Private/react-doc-generator/src/__mocks__/OtherExampleComponent.js",
       },
       Object {
         "components": Array [
@@ -329,10 +321,8 @@ fdsfsd
             "title": "Component1",
           },
           Object {
-            "description": "Blah blah blah...
-   
-fdfdfsdf
-   
+            "description": "Blah blah blah...   
+fdfdfsdf   
 fdsfsd   
 
 ",
@@ -384,24 +374,24 @@ fdsfsd
             "title": "DUPA",
           },
         ],
-        "filename": "C:\\\\Users\\\\rravindran\\\\metocean\\\\react-doc-generator\\\\src\\\\__mocks__\\\\inside\\\\OtherExampleComponent.js",
+        "filename": "/Users/marcin/Projects/Private/react-doc-generator/src/__mocks__/inside/OtherExampleComponent.js",
       },
     ],
     "version": "1.2.5",
   },
   Array [
     Array [
-      "C:\\\\Users\\\\rravindran\\\\metocean\\\\react-doc-generator\\\\src\\\\__mocks__\\\\ExampleComponent.js",
+      "/Users/marcin/Projects/Private/react-doc-generator/src/__mocks__/ExampleComponent.js",
       1,
       "[32mOK.[39m",
     ],
     Array [
-      "C:\\\\Users\\\\rravindran\\\\metocean\\\\react-doc-generator\\\\src\\\\__mocks__\\\\OtherExampleComponent.js",
+      "/Users/marcin/Projects/Private/react-doc-generator/src/__mocks__/OtherExampleComponent.js",
       2,
       "[32mOK.[39m",
     ],
     Array [
-      "C:\\\\Users\\\\rravindran\\\\metocean\\\\react-doc-generator\\\\src\\\\__mocks__\\\\inside\\\\OtherExampleComponent.js",
+      "/Users/marcin/Projects/Private/react-doc-generator/src/__mocks__/inside/OtherExampleComponent.js",
       2,
       "[32mOK.[39m",
     ],

@@ -1,16 +1,16 @@
 
-**C:\Users\rravindran\metocean\react-doc-generator\src\__mocks__\ExampleComponent.js**
+**/Users/marcin/Projects/Private/react-doc-generator/src/__mocks__/ExampleComponent.js**
 
 ### 1. General component description.
 
-fdgdfgdf gfdgfdg fdgfdgdfg   
-gdfgfdgdfg dfgdfgfdg dfg df getDefaultPropsg fdgfd   
-gfdgfdgdfgfdg.   
+fdgdfgdf gfdgfdg fdgfdgdfg   
+gdfgfdgdfg dfgdfgfdg dfg df getDefaultPropsg fdgfd   
+gfdgfdgdfgfdg.   
    
    
-Example:   
-```html   
-<Component name="bebe" />   
+Example:   
+```html   
+<Component name="bebe" />   
 ```   
 
 
@@ -24,7 +24,7 @@ foo|number|no|42|Description of prop &quot;foo&quot;.
 bar|custom|no|21|Description of prop &quot;bar&quot; (a custom validation function).
 baz|union|no||
 -----
-**C:\Users\rravindran\metocean\react-doc-generator\src\__mocks__\OtherExampleComponent.js**
+**/Users/marcin/Projects/Private/react-doc-generator/src/__mocks__/OtherExampleComponent.js**
 
 ### 1. Component1
 
@@ -43,8 +43,8 @@ onExit|() &#x3D;&gt; void|no|() &#x3D;&gt; {
 }|
 ### 2. DUPA
 
-Blah blah blah...   
-fdfdfsdf   
+Blah blah blah...   
+fdfdfsdf   
 fdsfsd   
 
 
@@ -56,7 +56,7 @@ foo|number|yes||Description of prop &quot;foo&quot;.
 bar|() &#x3D;&gt; mixed|yes||Description of prop &quot;bar&quot; (a custom validation function).
 baz|number | string|yes||
 -----
-**C:\Users\rravindran\metocean\react-doc-generator\src\__mocks__\inside\OtherExampleComponent.js**
+**/Users/marcin/Projects/Private/react-doc-generator/src/__mocks__/inside/OtherExampleComponent.js**
 
 ### 1. Component1
 
@@ -73,8 +73,8 @@ baz|union|no||
 onExit|func|no|See code|
 ### 2. DUPA
 
-Blah blah blah...   
-fdfdfsdf   
+Blah blah blah...   
+fdfdfsdf   
 fdsfsd   
 
 

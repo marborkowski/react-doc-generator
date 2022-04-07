@@ -69,10 +69,9 @@ regeneratorRuntime.mark(function _callee() {
           _context.next = 13;
           return (0, _generatereactdoc["default"])({
             sourceDir: _command["default"].args[0],
-            extensions: _command["default"].extensions,
-            excludePatterns: _command["default"].excludePatterns,
-            ignoreDirectory: _command["default"].ignore,
-            outputDir: _command["default"].output
+            extensions: _command["default"].opts().extensions,
+            excludePatterns: _command["default"].opts().excludePatterns,
+            ignoreDirectory: _command["default"].opts().ignore
           });
 
         case 13:
@@ -80,7 +79,7 @@ regeneratorRuntime.mark(function _callee() {
           _ref3 = _slicedToArray(_ref2, 2);
           templateData = _ref3[0];
           cliOutput = _ref3[1];
-          outputFile = _fs["default"].createWriteStream(_command["default"].output);
+          outputFile = _fs["default"].createWriteStream(_command["default"].opts().output);
           outputFile.write(template(templateData));
           cliOutput.forEach(function (cliRow) {
             table.push(cliRow);

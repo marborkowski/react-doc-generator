@@ -12,8 +12,8 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
 require("@babel/polyfill");
 
-describe('GenerateReactDoc', function () {
-  it('Whole thing should work',
+describe("GenerateReactDoc", function () {
+  it("Whole thing should work",
   /*#__PURE__*/
   _asyncToGenerator(
   /*#__PURE__*/
@@ -25,9 +25,9 @@ describe('GenerateReactDoc', function () {
           case 0:
             _context.next = 2;
             return (0, _generatereactdoc["default"])({
-              sourceDir: _path["default"].resolve(__dirname, '../__mocks__'),
-              extensions: ['js', 'jsx'],
-              outputDir: _path["default"].resolve(__dirname, '../__mocks__/output.md')
+              sourceDir: _path["default"].resolve(__dirname, "../__mocks__"),
+              extensions: ["js", "jsx"],
+              outputDir: _path["default"].resolve(__dirname, "../__mocks__/output.md")
             });
 
           case 2:

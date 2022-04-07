@@ -62,7 +62,7 @@ exports.isInvalidDefaultValue = isInvalidDefaultValue;
 
 var getTypeOfProp = function getTypeOfProp(prop) {
   if (!prop) {
-    return '';
+    return "";
   }
 
   if (prop.type) {
@@ -147,13 +147,13 @@ function _generateReactDocs() {
   _generateReactDocs = _asyncToGenerator(
   /*#__PURE__*/
   regeneratorRuntime.mark(function _callee(_ref3) {
-    var sourceDir, _ref3$extensions, extensions, _ref3$excludePatterns, excludePatterns, _ref3$ignoreDirectory, ignoreDirectory, outputDir, cliOutput, inputPath, allExtensions;
+    var sourceDir, _ref3$extensions, extensions, _ref3$excludePatterns, excludePatterns, _ref3$ignoreDirectory, ignoreDirectory, cliOutput, inputPath, allExtensions;
 
     return regeneratorRuntime.wrap(function _callee$(_context) {
       while (1) {
         switch (_context.prev = _context.next) {
           case 0:
-            sourceDir = _ref3.sourceDir, _ref3$extensions = _ref3.extensions, extensions = _ref3$extensions === void 0 ? [] : _ref3$extensions, _ref3$excludePatterns = _ref3.excludePatterns, excludePatterns = _ref3$excludePatterns === void 0 ? [] : _ref3$excludePatterns, _ref3$ignoreDirectory = _ref3.ignoreDirectory, ignoreDirectory = _ref3$ignoreDirectory === void 0 ? [] : _ref3$ignoreDirectory, outputDir = _ref3.outputDir;
+            sourceDir = _ref3.sourceDir, _ref3$extensions = _ref3.extensions, extensions = _ref3$extensions === void 0 ? [] : _ref3$extensions, _ref3$excludePatterns = _ref3.excludePatterns, excludePatterns = _ref3$excludePatterns === void 0 ? [] : _ref3$excludePatterns, _ref3$ignoreDirectory = _ref3.ignoreDirectory, ignoreDirectory = _ref3$ignoreDirectory === void 0 ? [] : _ref3$ignoreDirectory;
             cliOutput = [];
             inputPath = _path["default"].resolve(sourceDir);
             _context.next = 5;
@@ -175,7 +175,7 @@ function _generateReactDocs() {
                 });
                 cliOutput.push([filename, components.length, _colors["default"].green("OK.")]);
               } catch (e) {
-                console.error("In error");
+                console.error("In error", e);
                 cliOutput.push([filename, 0, _colors["default"].red("You have to export at least one valid React Class!")]);
               }
 

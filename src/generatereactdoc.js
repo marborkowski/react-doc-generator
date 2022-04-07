@@ -10,10 +10,10 @@ const readFilesPromise = promisify(readFiles);
 
 const templateData = {
   files: [],
-  version: pkg.version
+  version: pkg.version,
 };
 
-export const isDefaultValueTypeString = prop => {
+export const isDefaultValueTypeString = (prop) => {
   if (!prop || !prop.type) {
     return null;
   }
@@ -21,27 +21,26 @@ export const isDefaultValueTypeString = prop => {
     prop.type.name === "string" && typeof prop.defaultValue.value === "string"
   );
 };
-export const isInvalidDefaultValue = value =>
+export const isInvalidDefaultValue = (value) =>
   /[^\w\s.&:\-+*,!@%$]+/gim.test(value);
 export const getTypeOfProp = (prop) => {
-  if(!prop){
-    return ''
+  if (!prop) {
+    return "";
   }
-  if(prop.type){
-    return prop.type
-  }else if(prop.flowType){
-    const typeName = prop.flowType.raw ? prop.flowType.raw : prop.flowType.name
+  if (prop.type) {
+    return prop.type;
+  } else if (prop.flowType) {
+    const typeName = prop.flowType.raw ? prop.flowType.raw : prop.flowType.name;
     return {
-      name: typeName
-    }
+      name: typeName,
+    };
   }
-
-}  
+};
 export function processProp(prop) {
   const { defaultValue = {} } = prop;
   const isString = isDefaultValueTypeString(prop);
   const isInvalidValue = isInvalidDefaultValue(defaultValue.value);
-  const processedType = getTypeOfProp(prop)
+  const processedType = getTypeOfProp(prop);
   const processedDefaultValue =
     defaultValue && isInvalidValue && isString === false
       ? "See code"
@@ -49,11 +48,11 @@ export function processProp(prop) {
   const processedDescription = prop.description
     ? prop.description
         .split("\n")
-        .map(text => text.replace(/(^\s+|\s+$)/, ""))
-        .map(hasValidValue => hasValidValue)
+        .map((text) => text.replace(/(^\s+|\s+$)/, ""))
+        .map((hasValidValue) => hasValidValue)
         .join(" ")
     : "";
-    
+
   return {
     ...prop,
     defaultValue: { ...prop.defaultValue, value: processedDefaultValue },
@@ -66,7 +65,7 @@ function parseSingleFile(fileContent) {
     fileContent,
     resolver.findAllExportedComponentDefinitions
   );
-  const componentObjects = components.map(component => {
+  const componentObjects = components.map((component) => {
     const { description, displayName } = component;
     const modifiedTitle =
       description && !displayName
@@ -82,19 +81,19 @@ function parseSingleFile(fileContent) {
     }
     // validate default values
     const propEntries = Object.entries(component.props);
-    const modifiedPropEntries = propEntries.map(([propName,propObject]) => {
-        const modifiedProp = processProp(propObject)
-        return [propName,modifiedProp]   
-    })
-    const modife = modifiedPropEntries.reduce((accum,current) => {
-        const modifiedAccum = {...accum, [current[0]]: current[1]}
-        return modifiedAccum
-    },{})
+    const modifiedPropEntries = propEntries.map(([propName, propObject]) => {
+      const modifiedProp = processProp(propObject);
+      return [propName, modifiedProp];
+    });
+    const modife = modifiedPropEntries.reduce((accum, current) => {
+      const modifiedAccum = { ...accum, [current[0]]: current[1] };
+      return modifiedAccum;
+    }, {});
     return {
       ...component,
       title: modifiedTitle,
       description: modifiedDescription,
-      props: modife
+      props: modife,
     };
   });
   return componentObjects;
@@ -104,7 +103,6 @@ async function generateReactDocs({
   extensions = [],
   excludePatterns = [],
   ignoreDirectory = [],
-  outputDir
 }) {
   const cliOutput = [];
   const inputPath = path.resolve(sourceDir);
@@ -113,7 +111,7 @@ async function generateReactDocs({
     {
       match: new RegExp("\\.(?:" + extensions.join("|") + ")$"),
       exclude: excludePatterns,
-      excludeDir: ignoreDirectory
+      excludeDir: ignoreDirectory,
     },
     (err, content, filename, next) => {
       if (err) {
@@ -125,11 +123,11 @@ async function generateReactDocs({
         templateData.files.push({ filename, components });
         cliOutput.push([filename, components.length, Colors.green(`OK.`)]);
       } catch (e) {
-        console.error("In error",e);
+        console.error("In error", e);
         cliOutput.push([
           filename,
           0,
-          Colors.red(`You have to export at least one valid React Class!`)
+          Colors.red(`You have to export at least one valid React Class!`),
         ]);
       }
 
@@ -137,7 +135,7 @@ async function generateReactDocs({
     }
   );
   if (templateData.files.length === 0) {
-    let allExtensions = extensions.map(ext => {
+    let allExtensions = extensions.map((ext) => {
       return `\`*.${ext}\``;
     });
     console.log(
@@ -151,6 +149,6 @@ async function generateReactDocs({
     console.log(`${cliOutput.toString()}\n\n`);
   }
 
-  return [templateData,cliOutput];
+  return [templateData, cliOutput];
 }
 export default generateReactDocs;

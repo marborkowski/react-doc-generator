@@ -44,17 +44,17 @@
     "engine"
   ],
   "dependencies": {
-    "cli-table": "^0.3.1",
-    "colors": "^1.1.2",
-    "commander": "2.9.0",
-    "handlebars": "^4.0.6",
-    "node-dir": "^0.1.16",
-    "react-docgen": "^2.13.0"
+    "cli-table": "^0.3.11",
+    "colors": "^1.4.0",
+    "commander": "9.1.0",
+    "handlebars": "^4.7.7",
+    "node-dir": "^0.1.17",
+    "react-docgen": "^5.4.0"
   },
   "peerDependencies": {
-    "prop-types": "^16.8.6",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "prop-types": "16 - 18",
+    "react": "16 - 18",
+    "react-dom": "16 - 18"
   },
   "devDependencies": {
     "@babel/cli": "^7.0.0",

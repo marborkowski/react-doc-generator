@@ -2,174 +2,96 @@
 
 exports[`output file has needed values 1`] = `
 Array [
-  "
-",
-  "**C:\\\\Users\\\\rravindran\\\\metocean\\\\react-doc-generator\\\\src\\\\__mocks__\\\\ExampleComponent.js**
-",
-  "
-",
-  "### 1. General component description.
-",
-  "
-",
-  "fdgdfgdf gfdgfdg fdgfdgdfg
-   ",
-  "gdfgfdgdfg dfgdfgfdg dfg df getDefaultPropsg fdgfd
-   ",
-  "gfdgfdgdfgfdg.
-   ",
+  "",
+  "**/Users/marcin/Projects/Private/react-doc-generator/src/__mocks__/ExampleComponent.js**",
+  "",
+  "### 1. General component description.",
+  "",
+  "fdgdfgdf gfdgfdg fdgfdgdfg   ",
+  "gdfgfdgdfg dfgdfgfdg dfg df getDefaultPropsg fdgfd   ",
+  "gfdgfdgdfgfdg.   ",
   "   ",
   "   ",
-  "Example:
-   ",
-  "\`\`\`html
-   ",
-  "<Component name=\\"bebe\\" />
-   ",
+  "Example:   ",
+  "\`\`\`html   ",
+  "<Component name=\\"bebe\\" />   ",
   "\`\`\`   ",
   "",
-  "
-",
-  "
-",
-  "
-",
-  "Property | Type | Required | Default value | Description
-",
-  ":--- | :--- | :--- | :--- | :---
-",
-  "toe|string|no|&#x27;&#x27;|Description of prop &quot;toe&quot; has one break line here following more comments and has default empty string.
-",
-  "finger|string|no|&#x27;medium&#x27;|Description of prop &quot;finger&quot;.
-",
-  "foo|number|no|42|Description of prop &quot;foo&quot;.
-",
-  "bar|custom|no|21|Description of prop &quot;bar&quot; (a custom validation function).
-",
-  "baz|union|no||
-",
-  "-----
-",
-  "**C:\\\\Users\\\\rravindran\\\\metocean\\\\react-doc-generator\\\\src\\\\__mocks__\\\\OtherExampleComponent.js**
-",
-  "
-",
-  "### 1. Component1
-",
-  "
-",
+  "",
+  "",
+  "",
+  "Property | Type | Required | Default value | Description",
+  ":--- | :--- | :--- | :--- | :---",
+  "toe|string|no|&#x27;&#x27;|Description of prop &quot;toe&quot; has one break line here following more comments and has default empty string.",
+  "finger|string|no|&#x27;medium&#x27;|Description of prop &quot;finger&quot;.",
+  "foo|number|no|42|Description of prop &quot;foo&quot;.",
+  "bar|custom|no|21|Description of prop &quot;bar&quot; (a custom validation function).",
+  "baz|union|no||",
+  "-----",
+  "**/Users/marcin/Projects/Private/react-doc-generator/src/__mocks__/OtherExampleComponent.js**",
+  "",
+  "### 1. Component1",
+  "",
   "null   ",
   "",
-  "
-",
-  "
-",
-  "
-",
-  "Property | Type | Required | Default value | Description
-",
-  ":--- | :--- | :--- | :--- | :---
-",
-  "foo|number|no|10000099999|
-",
-  "bar|() &#x3D;&gt; void|yes||Description of prop &quot;bar&quot; (a custom validation function).
-",
-  "baz|number|string|yes||
-",
-  "onExit|() &#x3D;&gt; void|no|() &#x3D;&gt; {
-",
-  "    console.debug(&#x27;onExit&#x27;);
-",
-  "}|
-",
-  "### 2. DUPA
-",
-  "
-",
-  "Blah blah blah...
-   ",
-  "fdfdfsdf
-   ",
+  "",
+  "",
+  "",
+  "Property | Type | Required | Default value | Description",
+  ":--- | :--- | :--- | :--- | :---",
+  "foo|number|no|10000099999|",
+  "bar|() &#x3D;&gt; void|yes||Description of prop &quot;bar&quot; (a custom validation function).",
+  "baz|number|string|yes||",
+  "onExit|() &#x3D;&gt; void|no|() &#x3D;&gt; {",
+  "    console.debug(&#x27;onExit&#x27;);",
+  "}|",
+  "### 2. DUPA",
+  "",
+  "Blah blah blah...   ",
+  "fdfdfsdf   ",
   "fdsfsd   ",
   "",
-  "
-",
-  "
-",
-  "
-",
-  "Property | Type | Required | Default value | Description
-",
-  ":--- | :--- | :--- | :--- | :---
-",
-  "foo|number|yes||Description of prop &quot;foo&quot;.
-",
-  "bar|() &#x3D;&gt; mixed|yes||Description of prop &quot;bar&quot; (a custom validation function).
-",
-  "baz|number | string|yes||
-",
-  "-----
-",
-  "**C:\\\\Users\\\\rravindran\\\\metocean\\\\react-doc-generator\\\\src\\\\__mocks__\\\\inside\\\\OtherExampleComponent.js**
-",
-  "
-",
-  "### 1. Component1
-",
-  "
-",
+  "",
+  "",
+  "",
+  "Property | Type | Required | Default value | Description",
+  ":--- | :--- | :--- | :--- | :---",
+  "foo|number|yes||Description of prop &quot;foo&quot;.",
+  "bar|() &#x3D;&gt; mixed|yes||Description of prop &quot;bar&quot; (a custom validation function).",
+  "baz|number | string|yes||",
+  "-----",
+  "**/Users/marcin/Projects/Private/react-doc-generator/src/__mocks__/inside/OtherExampleComponent.js**",
+  "",
+  "### 1. Component1",
+  "",
   "null   ",
   "",
-  "
-",
-  "
-",
-  "
-",
-  "Property | Type | Required | Default value | Description
-",
-  ":--- | :--- | :--- | :--- | :---
-",
-  "foo|number|no|10000099999|Description of prop &quot;foo&quot;.
-",
-  "bar|custom|no||Description of prop &quot;bar&quot; (a custom validation function).
-",
-  "baz|union|no||
-",
-  "onExit|func|no|See code|
-",
-  "### 2. DUPA
-",
-  "
-",
-  "Blah blah blah...
-   ",
-  "fdfdfsdf
-   ",
+  "",
+  "",
+  "",
+  "Property | Type | Required | Default value | Description",
+  ":--- | :--- | :--- | :--- | :---",
+  "foo|number|no|10000099999|Description of prop &quot;foo&quot;.",
+  "bar|custom|no||Description of prop &quot;bar&quot; (a custom validation function).",
+  "baz|union|no||",
+  "onExit|func|no|See code|",
+  "### 2. DUPA",
+  "",
+  "Blah blah blah...   ",
+  "fdfdfsdf   ",
   "fdsfsd   ",
   "",
-  "
-",
-  "
-",
-  "
-",
-  "Property | Type | Required | Default value | Description
-",
-  ":--- | :--- | :--- | :--- | :---
-",
-  "foo|number|no||Description of prop &quot;foo&quot;.
-",
-  "bar|custom|no||Description of prop &quot;bar&quot; (a custom validation function).
-",
-  "baz|union|no||
-",
-  "-----
-",
-  "
-",
-  "<sub>This document was generated by the <a href=\\"https://github.com/marborkowski/react-doc-generator\\" target=\\"_blank\\">**React DOC Generator v1.2.5**</a>.</sub>
-",
+  "",
+  "",
+  "",
+  "Property | Type | Required | Default value | Description",
+  ":--- | :--- | :--- | :--- | :---",
+  "foo|number|no||Description of prop &quot;foo&quot;.",
+  "bar|custom|no||Description of prop &quot;bar&quot; (a custom validation function).",
+  "baz|union|no||",
+  "-----",
+  "",
+  "<sub>This document was generated by the <a href=\\"https://github.com/marborkowski/react-doc-generator\\" target=\\"_blank\\">**React DOC Generator v1.2.5**</a>.</sub>",
   "",
 ]
 `;
@@ -180,19 +102,23 @@ exports[`react-doc-generator contains help section if no argument is available i
 [37mREACT DOC GENERATOR v1.2.5[39m
 [37mby Marcin Borkowski <marborkowski@gmail.com>[39m
 [31mPlease specify <dir> as the first argument![39m
+Usage: react-doc-generator <dir> [options]
 
-  Usage: react-doc-generator <dir> [options]
-
-  Options:
-
-    -h, --help                      output usage information
-    -V, --version                   output the version number
-    -x, --extensions <items>        Include only these file extensions. Default: js,jsx
-    -i, --ignore <items>            Folders to ignore. Default: node_modules,__tests__,__mocks__
-    -e, --exclude-patterns <items>  Filename patterns to exclude. Default: []
-    -t, --title [value]             Document title. Default: 'Components'
-    -o, --output <file>             Markdown file to write. Default: 'DOCUMENTATION.MD'
-
+Options:
+  -V, --version                   output the version number
+  -x, --extensions <items>        Include only these file extensions. Default:
+                                  js,jsx (default: [\\"js\\",\\"jsx\\"])
+  -i, --ignore <items>            Folders to ignore. Default:
+                                  node_modules,__tests__,__mocks__ (default:
+                                  [\\"node_modules\\",\\"__tests__\\",\\"__mocks__\\"])
+  -e, --exclude-patterns <items>  Filename patterns to exclude. Default: []
+                                  (default: [])
+  -t, --title [value]             Document title. Default: 'Components'
+                                  (default: \\"Components\\")
+  -o, --output <file>             Markdown file to write. Default:
+                                  'DOCUMENTATION.MD' (default:
+                                  \\"DOCUMENTATION.MD\\")
+  -h, --help                      display help for command
 "
 `;
 
@@ -201,115 +127,18 @@ exports[`react-doc-generator has the proper console output 1`] = `
 
 [37mREACT DOC GENERATOR v1.2.5[39m
 [37mby Marcin Borkowski <marborkowski@gmail.com>[39m
-{ type: { name: 'string' },
-  required: false,
-  description:
-   'Description of prop \\"toe\\" has one break line\\\\r\\\\nhere following more comments and has default\\\\r\\\\nempty string.',
-  defaultValue: { value: '\\\\'\\\\'', computed: false } } 'prop'
-{ type: { name: 'string' },
-  required: false,
-  description: 'Description of prop \\"finger\\".',
-  defaultValue: { value: '\\\\'medium\\\\'', computed: false } } 'prop'
-{ type: { name: 'number' },
-  required: false,
-  description: 'Description of prop \\"foo\\".',
-  defaultValue: { value: '42', computed: false } } 'prop'
-{ type:
-   { name: 'custom',
-     raw:
-      'function(props, propName, componentName) {\\\\r\\\\n  // ...\\\\r\\\\n}' },
-  required: false,
-  description: 'Description of prop \\"bar\\" (a custom validation function).',
-  defaultValue: { value: '21', computed: false } } 'prop'
-{ type: { name: 'union', value: [ [Object], [Object] ] },
-  required: false,
-  description: '' } 'prop'
-{ flowType: { name: 'number' },
-  required: false,
-  description: '',
-  defaultValue: { value: '10000099999', computed: false } } 'prop'
-{ flowType:
-   { name: 'signature',
-     type: 'function',
-     raw: '() => void',
-     signature: { arguments: [], return: [Object] } },
-  required: true,
-  description: 'Description of prop \\"bar\\" (a custom validation function).' } 'prop'
-{ flowType:
-   { name: 'union',
-     raw: 'number|string',
-     elements: [ [Object], [Object] ] },
-  required: true,
-  description: '' } 'prop'
-{ flowType:
-   { name: 'signature',
-     type: 'function',
-     raw: '() => void',
-     signature: { arguments: [], return: [Object] } },
-  required: false,
-  description: '',
-  defaultValue:
-   { value: '() => {\\\\r\\\\n    console.debug(\\\\'onExit\\\\');\\\\r\\\\n}',
-     computed: false } } 'prop'
-{ flowType: { name: 'number' },
-  required: true,
-  description: 'Description of prop \\"foo\\".' } 'prop'
-{ flowType:
-   { name: 'signature',
-     type: 'function',
-     raw: '() => mixed',
-     signature: { arguments: [], return: [Object] } },
-  required: true,
-  description: 'Description of prop \\"bar\\" (a custom validation function).' } 'prop'
-{ flowType:
-   { name: 'union',
-     raw: 'number | string',
-     elements: [ [Object], [Object] ] },
-  required: true,
-  description: '' } 'prop'
-{ type: { name: 'number' },
-  required: false,
-  description: 'Description of prop \\"foo\\".',
-  defaultValue: { value: '10000099999', computed: false } } 'prop'
-{ type:
-   { name: 'custom',
-     raw:
-      'function(props, propName, componentName) {\\\\r\\\\n  // ...\\\\r\\\\n}' },
-  required: false,
-  description: 'Description of prop \\"bar\\" (a custom validation function).' } 'prop'
-{ type: { name: 'union', value: [ [Object], [Object] ] },
-  required: false,
-  description: '' } 'prop'
-{ type: { name: 'func' },
-  required: false,
-  description: '',
-  defaultValue:
-   { value: '() => {\\\\r\\\\n    console.debug(\\\\'onExit\\\\');\\\\r\\\\n}',
-     computed: false } } 'prop'
-{ type: { name: 'number' },
-  required: false,
-  description: 'Description of prop \\"foo\\".' } 'prop'
-{ type:
-   { name: 'custom',
-     raw:
-      'function(props, propName, componentName) {\\\\r\\\\n  // ...\\\\r\\\\n}' },
-  required: false,
-  description: 'Description of prop \\"bar\\" (a custom validation function).' } 'prop'
-{ type: { name: 'union', value: [ [Object], [Object] ] },
-  required: false,
-  description: '' } 'prop'
-C:\\\\Users\\\\rravindran\\\\metocean\\\\react-doc-generator\\\\src\\\\__mocks__\\\\ExampleComponent.js,1,[32mOK.[39m,C:\\\\Users\\\\rravindran\\\\metocean\\\\react-doc-generator\\\\src\\\\__mocks__\\\\OtherExampleComponent.js,2,[32mOK.[39m,C:\\\\Users\\\\rravindran\\\\metocean\\\\react-doc-generator\\\\src\\\\__mocks__\\\\inside\\\\OtherExampleComponent.js,2,[32mOK.[39m
+/Users/marcin/Projects/Private/react-doc-generator/src/__mocks__/ExampleComponent.js,1,[32mOK.[39m,/Users/marcin/Projects/Private/react-doc-generator/src/__mocks__/OtherExampleComponent.js,2,[32mOK.[39m,/Users/marcin/Projects/Private/react-doc-generator/src/__mocks__/inside/OtherExampleComponent.js,2,[32mOK.[39m
 
 
-┌────────────────────────────────────────────────────────────────────────────────────────────────┬────────────┬────────┐
-│ [36mPath[39m                                                                                           │ [36mComponents[39m │ [36mStatus[39m │
-├────────────────────────────────────────────────────────────────────────────────────────────────┼────────────┼────────┤
-│ C:\\\\Users\\\\rravindran\\\\metocean\\\\react-doc-generator\\\\src\\\\__mocks__\\\\ExampleComponent.js             │ 1          │ [32mOK.[39m    │
-├────────────────────────────────────────────────────────────────────────────────────────────────┼────────────┼────────┤
-│ C:\\\\Users\\\\rravindran\\\\metocean\\\\react-doc-generator\\\\src\\\\__mocks__\\\\OtherExampleComponent.js        │ 2          │ [32mOK.[39m    │
-├────────────────────────────────────────────────────────────────────────────────────────────────┼────────────┼────────┤
-│ C:\\\\Users\\\\rravindran\\\\metocean\\\\react-doc-generator\\\\src\\\\__mocks__\\\\inside\\\\OtherExampleComponent.js │ 2          │ [32mOK.[39m    │
-└────────────────────────────────────────────────────────────────────────────────────────────────┴────────────┴────────┘
+┌──────────────────────────────────────────────────────────────────────────────────────────────────┬────────────┬────────┐
+│ [36mPath[39m                                                                                             │ [36mComponents[39m │ [36mStatus[39m │
+├──────────────────────────────────────────────────────────────────────────────────────────────────┼────────────┼────────┤
+│ /Users/marcin/Projects/Private/react-doc-generator/src/__mocks__/ExampleComponent.js             │ 1          │ [32mOK.[39m    │
+├──────────────────────────────────────────────────────────────────────────────────────────────────┼────────────┼────────┤
+│ /Users/marcin/Projects/Private/react-doc-generator/src/__mocks__/OtherExampleComponent.js        │ 2          │ [32mOK.[39m    │
+├──────────────────────────────────────────────────────────────────────────────────────────────────┼────────────┼────────┤
+│ /Users/marcin/Projects/Private/react-doc-generator/src/__mocks__/inside/OtherExampleComponent.js │ 2          │ [32mOK.[39m    │
+└──────────────────────────────────────────────────────────────────────────────────────────────────┴────────────┴────────┘
 "
 `;
 
