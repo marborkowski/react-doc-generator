@@ -145,8 +145,6 @@ async function generateReactDocs({
         )}`
       )}\n`
     );
-  } else {
-    console.log(`${cliOutput.toString()}\n\n`);
   }
 
   return [templateData, cliOutput];

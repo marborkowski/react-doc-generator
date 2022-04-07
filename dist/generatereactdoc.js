@@ -188,8 +188,6 @@ function _generateReactDocs() {
                 return "`*.".concat(ext, "`");
               });
               console.log("".concat(_colors["default"].bold.yellow("Warning:"), " ").concat(_colors["default"].yellow("Could not find any files matching the file type: ".concat(allExtensions.join(" OR "))), "\n"));
-            } else {
-              console.log("".concat(cliOutput.toString(), "\n\n"));
             }
 
             return _context.abrupt("return", [templateData, cliOutput]);
