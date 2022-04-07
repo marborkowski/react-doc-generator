@@ -1,4 +1,3 @@
-require("@babel/polyfill");
 import generateReactDocs from "../generatereactdoc";
 import path from "path";
 

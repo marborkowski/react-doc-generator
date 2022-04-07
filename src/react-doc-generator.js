@@ -1,5 +1,4 @@
 #!/usr/bin/env node
-require("@babel/polyfill");
 import fs from "fs";
 import path from "path";
 import generateReactDocs from "./generatereactdoc";

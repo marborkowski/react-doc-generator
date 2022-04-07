@@ -1,9 +1,5 @@
 // https://travis-ci.org/marborkowski/react-doc-generator
 
-require("@babel/polyfill");
-const TEST_TIMEOUT = 120000;
-jasmine.DEFAULT_TIMEOUT_INTERVAL = TEST_TIMEOUT; // eslint-disable-line no-undef
-
 const path = require("path");
 const fs = require("fs");
 const spawn = require("child_process").spawn;
@@ -14,15 +10,15 @@ function run(command, args) {
 
   return new Promise((resolve, reject) => {
     let spawned = spawn(command, args);
-    spawned.stdout.on("data", data => {
+    spawned.stdout.on("data", (data) => {
       stdout.push(data);
     });
-    spawned.stderr.on("data", data => stderr.push(data));
+    spawned.stderr.on("data", (data) => stderr.push(data));
     spawned.on("close", () => resolve([stdout.join(""), stderr.join("")]));
-    spawned.on("error", err => {
+    spawned.on("error", (err) => {
       throw err;
     });
-  }).catch(error => {
+  }).catch((error) => {
     console.log(error, "Error");
     throw error;
   });
@@ -30,7 +26,7 @@ function run(command, args) {
 
 function loadDoc() {
   return new Promise((resolve, reject) => {
-    fs.readFile("./dist/DOCUMENTATION.md", "utf8", function(err, data) {
+    fs.readFile("./dist/DOCUMENTATION.md", "utf8", function (err, data) {
       if (err) {
         reject(err);
       } else {
@@ -40,19 +36,18 @@ function loadDoc() {
   });
 }
 let binPath = path.join(__dirname, "../../dist/react-doc-generator.js");
-  fs.chmodSync(binPath, "0777");
+fs.chmodSync(binPath, "0777");
 describe("react-doc-generator", () => {
-  
   it("has the proper console output", async () => {
     try {
       const stdout = await run("node", [
         binPath,
         "src/__mocks__",
         "-o",
-        "./dist/DOCUMENTATION.md"
+        "./dist/DOCUMENTATION.md",
       ]);
       const output = stdout[0];
-      expect(output).toMatchSnapshot()
+      expect(output).toMatchSnapshot();
     } catch (e) {
       console.error(e);
       throw e;
@@ -67,10 +62,10 @@ describe("react-doc-generator", () => {
         "-o",
         "./dist/DOCUMENTATION.md",
         "-x",
-        "4hs0,kku4"
+        "4hs0,kku4",
       ]);
       const output = stdout[0];
-      expect(output).toMatchSnapshot()
+      expect(output).toMatchSnapshot();
     } catch (e) {
       throw e;
     }
@@ -81,10 +76,10 @@ describe("react-doc-generator", () => {
       const stdout = await run("node", [
         binPath,
         "-o",
-        "./dist/DOCUMENTATION.md"
+        "./dist/DOCUMENTATION.md",
       ]);
       const output = stdout[0];
-      expect(output).toMatchSnapshot()
+      expect(output).toMatchSnapshot();
     } catch (e) {
       throw e;
     }
@@ -93,17 +88,17 @@ describe("react-doc-generator", () => {
 describe("output file", () => {
   it("has needed values", async () => {
     try {
-      await run("node",[
+      await run("node", [
         binPath,
         "src/__mocks__",
         "-o",
         "./dist/DOCUMENTATION.md",
         "-t",
-        "MyTitleXYZ"
+        "MyTitleXYZ",
       ]);
       const result = await loadDoc();
       const lines = result.split("\n");
-      expect(lines).toMatchSnapshot()
+      expect(lines).toMatchSnapshot();
     } catch (e) {
       throw e;
     }
