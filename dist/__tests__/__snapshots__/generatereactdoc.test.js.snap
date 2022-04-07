@@ -1,0 +1,410 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GenerateReactDoc Whole thing should work 1`] = `
+Array [
+  Object {
+    "files": Array [
+      Object {
+        "components": Array [
+          Object {
+            "description": "fdgdfgdf gfdgfdg fdgfdgdfg
+   
+gdfgfdgdfg dfgdfgfdg dfg df getDefaultPropsg fdgfd
+   
+gfdgfdgdfgfdg.
+   
+   
+   
+Example:
+   
+\`\`\`html
+   
+<Component name=\\"bebe\\" />
+   
+\`\`\`   
+
+",
+            "methods": Array [],
+            "props": Object {
+              "bar": Object {
+                "defaultValue": Object {
+                  "computed": false,
+                  "value": "21",
+                },
+                "description": "Description of prop \\"bar\\" (a custom validation function).",
+                "required": false,
+                "type": Object {
+                  "name": "custom",
+                  "raw": "function(props, propName, componentName) {
+  // ...
+}",
+                },
+              },
+              "baz": Object {
+                "defaultValue": Object {
+                  "value": undefined,
+                },
+                "description": "",
+                "required": false,
+                "type": Object {
+                  "name": "union",
+                  "value": Array [
+                    Object {
+                      "name": "number",
+                    },
+                    Object {
+                      "name": "string",
+                    },
+                  ],
+                },
+              },
+              "finger": Object {
+                "defaultValue": Object {
+                  "computed": false,
+                  "value": "'medium'",
+                },
+                "description": "Description of prop \\"finger\\".",
+                "required": false,
+                "type": Object {
+                  "name": "string",
+                },
+              },
+              "foo": Object {
+                "defaultValue": Object {
+                  "computed": false,
+                  "value": "42",
+                },
+                "description": "Description of prop \\"foo\\".",
+                "required": false,
+                "type": Object {
+                  "name": "number",
+                },
+              },
+              "toe": Object {
+                "defaultValue": Object {
+                  "computed": false,
+                  "value": "''",
+                },
+                "description": "Description of prop \\"toe\\" has one break line here following more comments and has default empty string.",
+                "required": false,
+                "type": Object {
+                  "name": "string",
+                },
+              },
+            },
+            "title": "General component description.",
+          },
+        ],
+        "filename": "C:\\\\Users\\\\rravindran\\\\metocean\\\\react-doc-generator\\\\src\\\\__mocks__\\\\ExampleComponent.js",
+      },
+      Object {
+        "components": Array [
+          Object {
+            "description": "null   
+
+",
+            "displayName": "Component1",
+            "methods": Array [],
+            "props": Object {
+              "bar": Object {
+                "defaultValue": Object {
+                  "value": undefined,
+                },
+                "description": "Description of prop \\"bar\\" (a custom validation function).",
+                "flowType": Object {
+                  "name": "signature",
+                  "raw": "() => void",
+                  "signature": Object {
+                    "arguments": Array [],
+                    "return": Object {
+                      "name": "void",
+                    },
+                  },
+                  "type": "function",
+                },
+                "required": true,
+                "type": Object {
+                  "name": "() => void",
+                },
+              },
+              "baz": Object {
+                "defaultValue": Object {
+                  "value": undefined,
+                },
+                "description": "",
+                "flowType": Object {
+                  "elements": Array [
+                    Object {
+                      "name": "number",
+                    },
+                    Object {
+                      "name": "string",
+                    },
+                  ],
+                  "name": "union",
+                  "raw": "number|string",
+                },
+                "required": true,
+                "type": Object {
+                  "name": "number|string",
+                },
+              },
+              "foo": Object {
+                "defaultValue": Object {
+                  "computed": false,
+                  "value": "10000099999",
+                },
+                "description": "",
+                "flowType": Object {
+                  "name": "number",
+                },
+                "required": false,
+                "type": Object {
+                  "name": "number",
+                },
+              },
+              "onExit": Object {
+                "defaultValue": Object {
+                  "computed": false,
+                  "value": "() => {
+    console.debug('onExit');
+}",
+                },
+                "description": "",
+                "flowType": Object {
+                  "name": "signature",
+                  "raw": "() => void",
+                  "signature": Object {
+                    "arguments": Array [],
+                    "return": Object {
+                      "name": "void",
+                    },
+                  },
+                  "type": "function",
+                },
+                "required": false,
+                "type": Object {
+                  "name": "() => void",
+                },
+              },
+            },
+            "title": "Component1",
+          },
+          Object {
+            "description": "Blah blah blah...
+   
+fdfdfsdf
+   
+fdsfsd   
+
+",
+            "displayName": "DUPA",
+            "methods": Array [],
+            "props": Object {
+              "bar": Object {
+                "defaultValue": Object {
+                  "value": undefined,
+                },
+                "description": "Description of prop \\"bar\\" (a custom validation function).",
+                "flowType": Object {
+                  "name": "signature",
+                  "raw": "() => mixed",
+                  "signature": Object {
+                    "arguments": Array [],
+                    "return": Object {
+                      "name": "mixed",
+                    },
+                  },
+                  "type": "function",
+                },
+                "required": true,
+                "type": Object {
+                  "name": "() => mixed",
+                },
+              },
+              "baz": Object {
+                "defaultValue": Object {
+                  "value": undefined,
+                },
+                "description": "",
+                "flowType": Object {
+                  "elements": Array [
+                    Object {
+                      "name": "number",
+                    },
+                    Object {
+                      "name": "string",
+                    },
+                  ],
+                  "name": "union",
+                  "raw": "number | string",
+                },
+                "required": true,
+                "type": Object {
+                  "name": "number | string",
+                },
+              },
+              "foo": Object {
+                "defaultValue": Object {
+                  "value": undefined,
+                },
+                "description": "Description of prop \\"foo\\".",
+                "flowType": Object {
+                  "name": "number",
+                },
+                "required": true,
+                "type": Object {
+                  "name": "number",
+                },
+              },
+            },
+            "title": "DUPA",
+          },
+        ],
+        "filename": "C:\\\\Users\\\\rravindran\\\\metocean\\\\react-doc-generator\\\\src\\\\__mocks__\\\\OtherExampleComponent.js",
+      },
+      Object {
+        "components": Array [
+          Object {
+            "description": "null   
+
+",
+            "displayName": "Component1",
+            "methods": Array [],
+            "props": Object {
+              "bar": Object {
+                "defaultValue": Object {
+                  "value": undefined,
+                },
+                "description": "Description of prop \\"bar\\" (a custom validation function).",
+                "required": false,
+                "type": Object {
+                  "name": "custom",
+                  "raw": "function(props, propName, componentName) {
+  // ...
+}",
+                },
+              },
+              "baz": Object {
+                "defaultValue": Object {
+                  "value": undefined,
+                },
+                "description": "",
+                "required": false,
+                "type": Object {
+                  "name": "union",
+                  "value": Array [
+                    Object {
+                      "name": "number",
+                    },
+                    Object {
+                      "name": "string",
+                    },
+                  ],
+                },
+              },
+              "foo": Object {
+                "defaultValue": Object {
+                  "computed": false,
+                  "value": "10000099999",
+                },
+                "description": "Description of prop \\"foo\\".",
+                "required": false,
+                "type": Object {
+                  "name": "number",
+                },
+              },
+              "onExit": Object {
+                "defaultValue": Object {
+                  "computed": false,
+                  "value": "See code",
+                },
+                "description": "",
+                "required": false,
+                "type": Object {
+                  "name": "func",
+                },
+              },
+            },
+            "title": "Component1",
+          },
+          Object {
+            "description": "Blah blah blah...
+   
+fdfdfsdf
+   
+fdsfsd   
+
+",
+            "displayName": "DUPA",
+            "methods": Array [],
+            "props": Object {
+              "bar": Object {
+                "defaultValue": Object {
+                  "value": undefined,
+                },
+                "description": "Description of prop \\"bar\\" (a custom validation function).",
+                "required": false,
+                "type": Object {
+                  "name": "custom",
+                  "raw": "function(props, propName, componentName) {
+  // ...
+}",
+                },
+              },
+              "baz": Object {
+                "defaultValue": Object {
+                  "value": undefined,
+                },
+                "description": "",
+                "required": false,
+                "type": Object {
+                  "name": "union",
+                  "value": Array [
+                    Object {
+                      "name": "number",
+                    },
+                    Object {
+                      "name": "string",
+                    },
+                  ],
+                },
+              },
+              "foo": Object {
+                "defaultValue": Object {
+                  "value": undefined,
+                },
+                "description": "Description of prop \\"foo\\".",
+                "required": false,
+                "type": Object {
+                  "name": "number",
+                },
+              },
+            },
+            "title": "DUPA",
+          },
+        ],
+        "filename": "C:\\\\Users\\\\rravindran\\\\metocean\\\\react-doc-generator\\\\src\\\\__mocks__\\\\inside\\\\OtherExampleComponent.js",
+      },
+    ],
+    "version": "1.2.5",
+  },
+  Array [
+    Array [
+      "C:\\\\Users\\\\rravindran\\\\metocean\\\\react-doc-generator\\\\src\\\\__mocks__\\\\ExampleComponent.js",
+      1,
+      "[32mOK.[39m",
+    ],
+    Array [
+      "C:\\\\Users\\\\rravindran\\\\metocean\\\\react-doc-generator\\\\src\\\\__mocks__\\\\OtherExampleComponent.js",
+      2,
+      "[32mOK.[39m",
+    ],
+    Array [
+      "C:\\\\Users\\\\rravindran\\\\metocean\\\\react-doc-generator\\\\src\\\\__mocks__\\\\inside\\\\OtherExampleComponent.js",
+      2,
+      "[32mOK.[39m",
+    ],
+  ],
+]
+`;
